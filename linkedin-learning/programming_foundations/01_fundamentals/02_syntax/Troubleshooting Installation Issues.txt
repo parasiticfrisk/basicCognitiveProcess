@@ -1,0 +1,10 @@
+Troubleshooting Installation Issues
+
+●	If you are using an OS that is something other than Windows or Mac, you can find instructions for how to download Python, here(https://wiki.python.org/moin/BeginnersGuide/Download).
+●	If the python3 command is not available on the command line, make sure you downloaded the latest version of Python from (http://www.python.org/downloads).
+●	If you’re using Windows and are having trouble accessing the Python interpreter on the command line, you can walk through the information in the official Python FAQ(https://docs.python.org/3/faq/windows.html)
+●	If you are receiving an error that you don’t understand, you can paste it into the search box on StackOverflow(https://stackoverflow.com/tags/python) to look for a possible solution.
+
+
+
+
