@@ -1,0 +1,20 @@
+Boolean Expressions and Relational Operators Practice Worksheet
+
+Enter the following expressions on the command line and write down the value.
+
+
+17 < 17
+	________________________
+15 == 3 * 5
+	________________________
+15 <= 3 * 5
+	________________________
+“Frank” == “Sarah”
+	________________________
+age = 13
+age != 10	
+________________________
+age = 13
+15 >= age + 2	
+________________________
+
