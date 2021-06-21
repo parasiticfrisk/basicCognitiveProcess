@@ -32,3 +32,8 @@ Web services have been at the core of modern application architectures for many 
 - Web Services API
 - Front-End Development
 - Back-End Development
+
+<hr>
+
+#### Disclaimer:
+Please note the server configurations in these files are purely for demo purposes. They are not securely configured and should NOT be internet facing. Doing so may expose your network to an unwanted security risk.
