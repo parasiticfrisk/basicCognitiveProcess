@@ -39,7 +39,7 @@
 
 <!-- course quick links -->
 [py01]:01_learning_python
-[py02]:02_python_essential_training
+[py02]:02_essential_training
 [py03]:03_object_oriented_python
 [py04]:../programming_foundations/05_data_structures
 [py05]:04_stacks_queues_deques
