@@ -1,3 +1,5 @@
+*/*.class
+*/__pycache__/
 
 # Created by https://www.toptal.com/developers/gitignore/api/swift,csharp,java,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=swift,csharp,java,python
