@@ -1,24 +1,26 @@
 <div align="center">
 
-# Advance Your Skills in Python
-
+# ~~Advance Your Skills in Python~~
+# Become a Python Developer
 [![course][course-badge]][course-link]
 
 </div>
 
 <!-- badge info -->
 [course-badge]:https://img.shields.io/badge/learning-Python-white?logo=Linkedin&labelColor=blue&style=for-the-badge
-[course-link]:https://www.linkedin.com/learning/paths/advance-your-skills-in-python "Programming Foundations: Fundamentals"
+[course-link]:https://www.linkedin.com/learning/paths/advance-your-skills-in-python "Advance Your Skills in Python"
 
+<br>
+
+## Pathway Description:
+Python is an in-demand programming language that can help you unlock the door to a better paying job. Whether you're a new programmer looking to switch careers or an experienced coder looking to expand your fit within a challenging job market, this path will provide you with the foundational skills for coding in Python.
 
 <br>
 
 ### Learning objectives
-- Utilize the power of object-oriented programming.
-- Determine the most effective data structures for your use case.
-- Leverage the efficiency of algorithms.
-- Deep-dive the Python standard library to keep your code lean.
-- Learn the best practices for coding in Python.
+- <b>Construct</b> and run a Python Program.
+- <b>Learn</b> best practices for coding in Python and building an application.
+- <b>Gain</b> the knowledge you need to pass LinkedIn's Python Skill Assessment.
 
 ---
 <br>
@@ -34,8 +36,9 @@
 | [Python Data Structures: Dictionaries][py07]               |
 | [Programming Foundations: Algorithms][py08]                |
 | [Python Standard Library Essential Training][py09]         |
-| [Advanced Python][py10]                                    |
-| [Python Essential Libraries][py11]                         |
+| [Python: Decroators][py10]                                 |
+| [Advanced Python][py11]                                    |
+| [Python Essential Libraries][py12]                         |
 
 <!-- course quick links -->
 [py01]:01_learning_python
@@ -47,5 +50,6 @@
 [py07]:06_dictionaries
 [py08]:../programming_foundations/03_algorithms
 [py09]:07_standard_library_essential_training
-[py10]:08_advanced_python
-[py11]:09_essential_libraries
+[py10]:08_decorators
+[py11]:09_advanced_python
+[py12]:10_essential_libraries
