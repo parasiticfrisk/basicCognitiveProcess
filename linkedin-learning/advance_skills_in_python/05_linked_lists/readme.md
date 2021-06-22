@@ -8,7 +8,7 @@
 
 <!-- badge info -->
 [course-badge]:https://img.shields.io/badge/learning-Python-white?logo=Linkedin&labelColor=blue&style=for-the-badge
-[course-link]:https://www.linkedin.com/learning/python-data-structures-linked-lists/understanding-linked-lists "Python Data Structures: Linked Lists"
+[course-link]:https://www.linkedin.com/learning/python-data-structures-linked-lists "Python Data Structures: Linked Lists"
 
 <br>
 
