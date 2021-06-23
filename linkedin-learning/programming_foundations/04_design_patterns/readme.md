@@ -2,7 +2,7 @@
 
 # Programming Foundations: Design Patterns
 
-[![course][course-badge]][course-link]
+[![course-badge]][course-link]
 
 </div>
 

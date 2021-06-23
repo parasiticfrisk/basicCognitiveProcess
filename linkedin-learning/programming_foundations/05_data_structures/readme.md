@@ -2,7 +2,7 @@
 
 # Programming Foundations: Data Structures
 
-[![course][course-badge]][course-link]
+[![course-badge]][course-link]
 
 </div>
 

@@ -2,7 +2,7 @@
 
 # Learning Python
 
-[![course][course-badge]][course-link]
+[![course-badge]][course-link]
 
 </div>
 

@@ -2,7 +2,7 @@
 
 # Programming Foundations: APIS and Web Services
 
-[![course][course-badge]][course-link]
+[![course-badge]][course-link]
 
 </div>
 

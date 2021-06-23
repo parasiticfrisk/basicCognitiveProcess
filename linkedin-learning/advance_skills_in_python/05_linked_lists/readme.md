@@ -2,7 +2,7 @@
 
 # Python Data Structures: Linked Lists
 
-[![course][course-badge]][course-link]
+[![course-badge]][course-link]
 
 </div>
 

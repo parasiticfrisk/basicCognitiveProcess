@@ -2,7 +2,7 @@
 
 # Python Essential Libraries
 
-[![course][course-badge]][course-link]
+[![course-badge]][course-link]
 
 </div>
 

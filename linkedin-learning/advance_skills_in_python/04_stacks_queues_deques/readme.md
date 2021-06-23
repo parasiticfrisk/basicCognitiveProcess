@@ -2,7 +2,7 @@
 
 # Python Data Structures: Stacks, Queues, and Deques
 
-[![course][course-badge]][course-link]
+[![course-badge]][course-link]
 
 </div>
 
