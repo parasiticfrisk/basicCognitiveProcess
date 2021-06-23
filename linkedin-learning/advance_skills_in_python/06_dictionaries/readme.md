@@ -2,7 +2,7 @@
 
 # Python Data Structures: Dictionaries
 
-[![course][course-badge]][course-link]
+[![course-badge]][course-link]
 
 </div>
 

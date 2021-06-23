@@ -2,7 +2,7 @@
 
 # Programming Foundations: Test-Driven Development
 
-[![course][course-badge]][course-link]
+[![course-badge]][course-link]
 
 </div>
 

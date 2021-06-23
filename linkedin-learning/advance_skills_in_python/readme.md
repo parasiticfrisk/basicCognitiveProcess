@@ -2,7 +2,7 @@
 
 # ~~Advance Your Skills in Python~~
 # Become a Python Developer
-[![course][course-badge]][course-link]
+[![course-badge]][course-link]
 
 </div>
 

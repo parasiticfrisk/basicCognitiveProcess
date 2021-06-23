@@ -2,7 +2,7 @@
 
 # Python Standard Library Essential Training
 
-[![course][course-badge]][course-link]
+[![course-badge]][course-link]
 
 </div>
 

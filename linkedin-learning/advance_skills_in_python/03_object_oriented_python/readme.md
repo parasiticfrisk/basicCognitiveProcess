@@ -2,7 +2,7 @@
 
 # Python Object-Oriented Programming
 
-[![course][course-badge]][course-link]
+[![course-badge]][course-link]
 
 </div>
 

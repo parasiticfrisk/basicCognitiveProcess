@@ -2,7 +2,7 @@
 
 # Programming Foundations: Beyond the Fundamentals
 
-[![course][course-badge]][course-link]
+[![course-badge]][course-link]
 
 </div>
 

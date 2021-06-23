@@ -2,7 +2,7 @@
 
 # Programming Foundations: Real World Examples
 
-[![course][course-badge]][course-link]
+[![course-badge]][course-link]
 
 </div>
 
