@@ -2,7 +2,7 @@
 
 # Become a Programmer: Foundations
 
-[![course][course-badge]][course-link]
+[![course-badge]][course-link]
 
 </div>
 
