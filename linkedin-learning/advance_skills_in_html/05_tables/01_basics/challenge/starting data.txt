@@ -1,0 +1,55 @@
+Day	
+&nbsp;
+Regular Hours	
+Overtime Hours	
+Sick Hours
+Vacation Hours	
+Total
+
+Monday	
+11/1/19	
+8.00
+&nbsp;
+&nbsp;
+&nbsp;				
+8.00
+
+Tuesday	
+11/2/19	
+4.00
+&nbsp;
+4.00
+&nbsp;				
+8.00
+
+Wednesday	
+11/3/19	
+4.00
+&nbsp;
+&nbsp;
+4.00				
+8.00
+
+&nbsp;
+Total Hours	
+16.00	
+0.00	
+4.00	
+4.00	
+24.00
+
+&nbsp;
+Hourly Rate	
+$20.00	
+$30.00 	
+$20.00 
+$20.00
+&nbsp; 	
+	
+&nbsp;
+Total Pay	
+$320.00	
+$0.00	
+$80.00	
+$80.00	
+$480.00
