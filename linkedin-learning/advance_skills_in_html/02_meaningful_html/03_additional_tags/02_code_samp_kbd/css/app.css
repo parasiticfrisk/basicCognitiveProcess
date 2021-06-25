@@ -1,0 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+}
+kbd {
+  border: 1px solid #666;
+  padding: 0.2rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #666;
+}
