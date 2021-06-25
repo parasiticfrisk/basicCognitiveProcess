@@ -1,0 +1,23 @@
+.DS_Store
+node_modules
+.tmp
+npm-debug.log
+
+# Python specific
+*.egg-info/
+*.py[cod]
+.pytest_cache/
+__pycache__/
+build/
+dist/
+venv/
+
+# Course output files
+**/02_02/game.log
+**/03_01/event.json
+**/04_03/weather_pb2.py
+**/04_05/weather_pb2.py
+**/04_05/weather_pb2_grpc.py
+**/05_02/config2.yml
+**/05_04/logs.db
+**/solution/ufo.db
