@@ -3,12 +3,14 @@
 # Become a Programmer: Foundations
 
 [![course-badge]][course-link]
+[![license-badge]][LICENSE]
 
 </div>
 
 <!-- badge info -->
-[course-badge]:https://img.shields.io/badge/learning-Fundamentals-white?logo=Linkedin&labelColor=blue&style=for-the-badge
+[course-badge]:https://img.shields.io/badge/learning-programming%20foundations-white?logo=Linkedin&labelColor=blue&style=for-the-badge
 [course-link]:https://www.linkedin.com/learning/paths/become-a-programmer-foundations "Programming Foundations: Fundamentals"
+[license-badge]:https://img.shields.io/badge/learning-license-success?logo=Linkedin&labelColor=black&style=for-the-badge
 
 <br>
 
@@ -40,6 +42,18 @@ Programmers are in higher demand today than ever before. Get the essential skill
 | [Software Testing/QA][pf11]                     |
 | [Secure Coding][pf12]                           |
 | [Fuzzy Logic][pf13]                             |
+
+<br>
+
+---
+### Notice
+Licensed under the LinkedIn Learning Exercise File License. See [LICENSE] for license information.
+
+<br>
+
+Please note, this project may automatically load third party code from external repositories (for example, NPM modules, Composer packages, or other dependencies). If so, such third party code may be subject to other license terms than as set forth above. In addition, such third party code may also depend on and load multiple tiers of dependencies. Please review the applicable licenses of the additional dependencies.
+
+[LICENSE]:../LICENSE "LinkedIn Learning License"
 
 <!-- course quick links -->
 [pf01]:01_fundamentals

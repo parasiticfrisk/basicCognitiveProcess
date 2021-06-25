@@ -1,14 +1,16 @@
 <div align="center">
 
-# Programming Foundations: APIS and Web Services
+# Programming Foundations: APIs and Web Services
 
 [![course-badge]][course-link]
+[![license-badge]][LICENSE]
 
 </div>
 
 <!-- badge info -->
-[course-badge]:https://img.shields.io/badge/learning-APIS%20&%20Web%20Services-white?logo=Linkedin&labelColor=blue&style=for-the-badge
-[course-link]:https://www.linkedin.com/learning/programming-foundations-apis-and-web-services "Programming Foundations: Data Structures"
+[course-badge]:https://img.shields.io/badge/learning-programming%20foundations-white?logo=Linkedin&labelColor=blue&style=for-the-badge
+[course-link]:https://www.linkedin.com/learning/programming-foundations-apis-and-web-services "Programming Foundations: APIs and Web Services"
+[license-badge]:https://img.shields.io/badge/learning-license-success?logo=Linkedin&labelColor=black&style=for-the-badge
 
 <br>
 
@@ -33,7 +35,20 @@ Web services have been at the core of modern application architectures for many 
 - Front-End Development
 - Back-End Development
 
-<hr>
+<br>
 
-#### Disclaimer:
+---
+### Disclaimer
 Please note the server configurations in these files are purely for demo purposes. They are not securely configured and should NOT be internet facing. Doing so may expose your network to an unwanted security risk.
+
+<br>
+
+---
+### Notice
+Licensed under the LinkedIn Learning Exercise File License. See [LICENSE] for license information.
+
+<br>
+
+Please note, this project may automatically load third party code from external repositories (for example, NPM modules, Composer packages, or other dependencies). If so, such third party code may be subject to other license terms than as set forth above. In addition, such third party code may also depend on and load multiple tiers of dependencies. Please review the applicable licenses of the additional dependencies.
+
+[LICENSE]:../../LICENSE "LinkedIn Learning License"
