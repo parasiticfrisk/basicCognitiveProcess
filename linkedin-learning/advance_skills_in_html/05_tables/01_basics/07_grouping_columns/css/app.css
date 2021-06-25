@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.retail {
+  background-color: red;
+}
+.case {
+  background-color: blue;
+}
+.item {
+  background-color: yellow;
+}

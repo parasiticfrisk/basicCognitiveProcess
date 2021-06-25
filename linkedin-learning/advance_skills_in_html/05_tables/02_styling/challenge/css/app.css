@@ -1,0 +1,32 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+  background-color: #CCAE51;
+  color: #fff;
+}
+caption {
+  font-size: 1.5rem;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+td, th {
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+tbody tr:nth-child(odd),
+tfoot tr:nth-child(even) {
+   background-color: rgba(204, 174, 81, 0.2);
+}
+tfoot tr td:first-child {
+  border: none;
+  background-color: white;
+}
+tfoot {
+border-top: 5px solid black;
+}

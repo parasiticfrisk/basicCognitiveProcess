@@ -1,0 +1,83 @@
+.tablescroll {
+  overflow: auto;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+table {
+  border: 1px solid #3F2B21;
+  border-collapse: collapse;
+}
+td, th {
+  padding: 0.5rem;
+  border-bottom: 1px solid #CCAE51;
+}
+tfoot tr:last-child td {
+  border-bottom: none;
+}
+caption {
+  font-weight: bold;
+  text-align: left;
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: #CCAE51
+}
+th {
+  text-align: left;
+  background-color: #CCAE51;
+  color: white;
+}
+thead tr:first-child,
+thead tr:first-child th {
+  background-color: #3F2B21;
+  text-align: center;
+  border-left: 1px solid white;
+  font-size: 1.3rem;
+}
+tfoot tr {
+  background-color: #3F2B21;
+  color: white;
+  font-weight: bold;
+}
+tbody tr:nth-child(even) {
+  background-color: rgba(204, 174, 81, 0.2);
+}
+@media (max-width: 600px) {
+  table {
+    border: none;
+  }
+  tbody, tfoot {
+    border: 1px solid #3F2B21;
+  }
+  table, tr, td {
+    display: block;
+  }
+  th, thead {
+    display: none;
+  }
+  td:nth-child(1)::before {
+    content: "Item #: ";
+}
+td:nth-child(2)::before {
+    content: "Product or Service: ";
+}
+td:nth-child(3)::before {
+    content: "Price (ea): ";
+}
+td:nth-child(4)::before {
+    content: "Retail price (case): ";
+}
+td:nth-child(5)::before {
+    content: "Case Discount: ";
+}
+  td:nth-child(6)::before {
+    content: "12+ Case Price: ";
+}
+  td:nth-child(7)::before {
+    content: "12+ Case Discount: ";
+}
+  tfoot td:nth-child(1)::before,
+  tfoot td:nth-child(2)::before {
+    content: "";
+  }
+}
