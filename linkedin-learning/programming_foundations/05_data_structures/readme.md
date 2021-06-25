@@ -7,7 +7,7 @@
 </div>
 
 <!-- badge info -->
-[course-badge]:https://img.shields.io/badge/learning-Data%20Structures-white?logo=Linkedin&labelColor=blue&style=for-the-badge
+[course-badge]:https://img.shields.io/badge/learning-programming%20foundations-white?logo=Linkedin&labelColor=blue&style=for-the-badge
 [course-link]:https://www.linkedin.com/learning/programming-foundations-data-structures-2 "Programming Foundations: Data Structures"
 
 <br>

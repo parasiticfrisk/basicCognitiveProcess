@@ -8,7 +8,7 @@
 
 <!-- badge info -->
 [course-badge]:https://img.shields.io/badge/learning-HTML-white?logo=Linkedin&labelColor=blue&style=for-the-badge
-[course-link]:hhttps://www.linkedin.com/learning/crafting-meaningful-html "Crafting Meaningful HTML"
+[course-link]:https://www.linkedin.com/learning/crafting-meaningful-html "Crafting Meaningful HTML"
 
 <br>
 

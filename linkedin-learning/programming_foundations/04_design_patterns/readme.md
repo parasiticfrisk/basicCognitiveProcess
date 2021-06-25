@@ -7,7 +7,7 @@
 </div>
 
 <!-- badge info -->
-[course-badge]:https://img.shields.io/badge/learning-Design%20Patterns-white?logo=Linkedin&labelColor=blue&style=for-the-badge
+[course-badge]:https://img.shields.io/badge/learning-programming%20foundations-white?logo=Linkedin&labelColor=blue&style=for-the-badge
 [course-link]:https://www.linkedin.com/learning/programming-foundations-design-patterns-2 "Programming Foundations: Design Patterns"
 
 <br>

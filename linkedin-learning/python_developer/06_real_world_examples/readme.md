@@ -7,7 +7,7 @@
 </div>
 
 <!-- badge info -->
-[course-badge]:https://img.shields.io/badge/learning-Real%20World%20Examples-white?logo=Linkedin&labelColor=blue&style=for-the-badge
+[course-badge]:https://img.shields.io/badge/learning-programming%20foundations-white?logo=Linkedin&labelColor=blue&style=for-the-badge
 [course-link]:https://www.linkedin.com/learning/programming-foundations-real-world-examples "Programming Foundations: Real World Examples"
 
 <br>

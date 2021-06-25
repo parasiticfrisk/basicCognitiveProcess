@@ -1,14 +1,14 @@
 <div align="center">
 
-# Programming Foundations: APIS and Web Services
+# Programming Foundations: APIs and Web Services
 
 [![course-badge]][course-link]
 
 </div>
 
 <!-- badge info -->
-[course-badge]:https://img.shields.io/badge/learning-APIS%20&%20Web%20Services-white?logo=Linkedin&labelColor=blue&style=for-the-badge
-[course-link]:https://www.linkedin.com/learning/programming-foundations-apis-and-web-services "Programming Foundations: Data Structures"
+[course-badge]:https://img.shields.io/badge/learning-programming%20foundations-white?logo=Linkedin&labelColor=blue&style=for-the-badge
+[course-link]:https://www.linkedin.com/learning/programming-foundations-apis-and-web-services "Programming Foundations: APIs and Web Services"
 
 <br>
 

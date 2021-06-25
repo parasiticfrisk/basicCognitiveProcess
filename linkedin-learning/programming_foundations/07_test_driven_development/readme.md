@@ -7,7 +7,7 @@
 </div>
 
 <!-- badge info -->
-[course-badge]:https://img.shields.io/badge/learning-Test%20Driven%20Development-white?logo=Linkedin&labelColor=blue&style=for-the-badge
+[course-badge]:https://img.shields.io/badge/learning-programming%20foundations-white?logo=Linkedin&labelColor=blue&style=for-the-badge
 [course-link]:https://www.linkedin.com/learning/programming-foundations-test-driven-development-3 "Programming Foundations: Test-Driven Development"
 
 <br>
