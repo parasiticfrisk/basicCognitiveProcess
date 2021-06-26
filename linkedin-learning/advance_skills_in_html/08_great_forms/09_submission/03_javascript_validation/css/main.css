@@ -7,7 +7,7 @@ body {
     line-height: 1.6;
     font-family: 'Source Sans Pro';
     background-color: rgb(245, 245, 245);
-    background: url(../images/bg3.png) no-repeat;
+    background: url(../../../images/bg3.png) no-repeat;
     background-size: cover;
     height: 100vh;
 }
@@ -45,7 +45,6 @@ a {
     border-bottom: 5px solid #018fb4;
     border-radius: 10px 10px 0 0;
 }
-
 
 .inputRequirements {
   font-size: 1.3rem;
@@ -152,8 +151,6 @@ button:focus, input[type="button"]:focus, input[type="submit"]:focus {
   color: rgb(40, 40, 40);
 }
 
-
-
 .inputRequirements li.invalid {
     color: #e77c3c;;
 }
@@ -186,5 +183,3 @@ input:not([type="submit"]):active + .inputRequirements {
   max-height: 1000px; /* any large number (bigger then the .inputRequirements list) */
   transition: max-height 1s ease-in;
 }
-
-
