@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(37, 37, 37);
+}
+
+a,
+time {
+    color: aliceblue;
+}
+
+#video-container {
+    position: relative;
+}
+
+#mediacontrols {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}

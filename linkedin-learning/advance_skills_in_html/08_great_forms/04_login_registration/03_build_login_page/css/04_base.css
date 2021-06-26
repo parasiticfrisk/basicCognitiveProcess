@@ -30,7 +30,7 @@ h2 {
 }
 
 #logo h1 {
-    background: url(../image/logo.png) no-repeat top center;
+    background: url(../../../images/fishLogo.png) no-repeat top center;
     color: #fff;
     font-weight: 900;
     font-size: 2rem;
@@ -41,22 +41,22 @@ h2 {
 }
 
 #whyHelp { /* 04_01 */
-    background: url(../image/bg.png) no-repeat bottom center fixed;
+    background: url(../../../images/fishBg.png) no-repeat bottom center fixed;
     background-size: contain;
 }
 
 #logLanding { /* 04_02 */
-    background: url(../image/bg1.png) no-repeat bottom center fixed;
+    background: url(../../../images/fishBg1.png) no-repeat bottom center fixed;
     background-size: contain;
 }
 
 #loginLanding { /* 04_03 & 04_04 */
-    background: url(../image/bg2.png) no-repeat bottom center;
+    background: url(../../../images/fishBg2.png) no-repeat bottom center;
     background-size: contain;
 }
 
 #signupLanding { /* 04_03 */
-    background: url(../image/bg3.png) no-repeat bottom center;
+    background: url(../../../images/fishBg3.png) no-repeat bottom center;
     background-size: contain;
 }
 

@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Lato', sans-serif;
-    background: url(../images/jungleUp.jpg) repeat-x bottom center fixed,
-                 url(../images/jungleDown.jpg) repeat-x top center;
+    background: url(../../../images/jungleUp.jpg) repeat-x bottom center fixed,
+                 url(../../../images/jungleDown.jpg) repeat-x top center;
     padding: 1em;
 }
 
@@ -43,7 +43,7 @@ header#main {
 nav { grid-area: n;}
         
 #logo {
-    background: url(../images/birdLogo.svg) no-repeat 0px 0px;
+    background: url(../../../images/birdLogo.svg) no-repeat 0px 0px;
     padding-left: 2.5em;
     height: 90px;
     color: #42b490;
@@ -88,7 +88,7 @@ nav a {
 
 #intro {
     text-align: center;
-    background:  url(../images/walkway.jpg) no-repeat;
+    background:  url(../../../images/walkway.jpg) no-repeat;
     background-size: cover;
     margin-bottom: 1em;
 }
@@ -139,22 +139,22 @@ nav a {
 }
 
 #palms h1 {
-    background: url(../images/palm.jpg) no-repeat top center;
+    background: url(../../../images/palm.jpg) no-repeat top center;
     background-size: cover;
 }
 
 #cycads h1 {
-    background: url(../images/cycad.jpg) no-repeat center center;
+    background: url(../../../images/cycad.jpg) no-repeat center center;
     background-size: cover;
 }
 
 #tropicals h1 {
-    background: url(../images/heliconia.jpg) no-repeat center center;
+    background: url(../../../images/heliconia.jpg) no-repeat center center;
     background-size: cover;
 }
 
 #services h1 {
-    background: url(../images/services.jpg) no-repeat center center;
+    background: url(../../../images/services.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -167,7 +167,7 @@ nav a {
 }
 
  #contact h1 {
-    background: url(../images/contact.jpg) no-repeat center center;
+    background: url(../../../images/contact.jpg) no-repeat center center;
     background-size: cover;
 }
 

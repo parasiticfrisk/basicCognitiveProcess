@@ -1,0 +1,8 @@
+body {
+  font-size: 18pt;
+  background: url("images/travel-globe-light.png") no-repeat
+  right 20px top 10px
+  fixed;
+}
+h1 {font-size: 115%;}
+h2 {font-size: 110%;}

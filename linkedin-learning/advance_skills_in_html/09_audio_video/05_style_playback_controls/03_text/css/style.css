@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(37, 37, 37);
+    color: aliceblue;
+    padding: 2rem;
+    margin: 0;
+}
+
+button {
+    background-color: #3d0000;
+    border-color: rgb(82, 82, 82);
+    border-radius: 8px;
+    border-style: solid;
+    color: rgb(180, 180, 180);
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 36px;
+}
+
+a,
+time {
+    color: aliceblue;
+}
