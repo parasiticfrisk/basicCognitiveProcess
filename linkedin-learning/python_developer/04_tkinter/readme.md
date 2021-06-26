@@ -17,6 +17,8 @@
 ## Course Description:
 Put an end to writing command-line interfaces for your programs. Use Tkinter, the Python package for creating themed interface elements with the Tk GUI toolkit. Join Barron Stone in this course as he walks through the most popular Tk widgets and shows you how to customize their appearance and behavior to fit your application. Learn how to manage the placement of those widgets on the GUI and make them react to user behavior with event-driven code. The final chapter takes you through the entire start-to-finish process of building the user interface for an application, so you can see how all of these techniques work in a real-world development scenario.
 
+<br>
+
 ### Learning objectives
 - Installing Python 3 and Tcl/Tk for Mac or Windows
 - Creating and configuring themed Tk widgets
