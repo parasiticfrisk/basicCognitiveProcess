@@ -1,0 +1,18 @@
+div.warning {
+    color: white;
+    background-color: crimson;
+    padding: 1rem;
+  }
+  p.warning {
+    color: crimson;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .italic {
+    font-style: italic;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
