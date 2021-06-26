@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(37, 37, 37);
+    color: aliceblue;
+    padding: 2rem;
+    margin: 0;
+}
+
+a,
+time {
+    color: aliceblue;
+}
