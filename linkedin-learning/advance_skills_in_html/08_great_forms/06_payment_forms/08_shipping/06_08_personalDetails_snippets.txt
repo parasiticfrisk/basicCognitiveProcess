@@ -1,0 +1,12 @@
+/* 
+******** JS CODE SNIPPETS ******** 
+*/
+
+// update shipping amount based on radio button selection
+$('input[type=radio]').on('change', function() { 
+var setValue = $("input[type='radio']:checked").val(); 
+	$('.shipValue').text(setValue); 
+	var newTot = parseFloat(setValue) + 788.00; 
+	newTot = parseFloat(newTot).toFixed(2); 
+	$('.totCost').text(newTot); 
+  });

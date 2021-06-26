@@ -1,0 +1,159 @@
+/*        ------SEARCH BOX ----------      */
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #3ab49d;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  -moz-appearance: none;/* older firefox */
+  -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
+  appearance: none;
+}
+
+.searchTerm:focus{
+  color: #70c5b5;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #3ab49d;
+  background: #3ab49d;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+        
+.searchButton:focus {
+    outline: 0;
+}
+
+.swrap {
+    width: 50%;
+    margin: 0 auto 1em;
+}
+
+
+/*        ------CONTACT FORM ----------      */
+form#contactForm {
+    max-width: 600px;
+    margin: auto;
+}
+
+fieldset {
+    margin: 0 1em;
+    padding: 1em;
+    border: solid 1px #fff;
+    border-radius: .5em;
+}
+
+legend {
+    padding: 0 .5em;
+    font-size: 1.3em;
+    font-weight: 200;
+}
+
+.contactForm label {
+    display: block;
+    margin-top: 1em;
+}
+
+.contactForm label:first-of-type {
+    margin-top: 0;
+}
+
+.contactForm input, .contactForm textarea {
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 100%;
+    cursor: text;
+    color: #707070;
+}
+
+.contactForm input[type="submit"] {
+    background-color: #2e8074;
+    border: none;
+    color: #fff;
+    width: 50%;
+    min-width: 170px;
+}
+
+.contactForm input[type="submit"]:active {
+    box-shadow: 1px 1px 6px rgba(255,255,255,.6), 0px 0px 4px rgba(255,255,255,.8);
+}
+
+.contactForm .checks {
+    margin: .25em 0 1em .1em;
+}
+
+.contactForm input[type="checkbox"] + label {
+    display: inline-block;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* custom checkbox */
+.contactForm .checks label {
+    display: inline-block;
+}
+
+.contactForm input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+    margin-left: -1px;
+}
+
+input[type="checkbox"]:checked ~ span:before {
+    content: "\f14a";
+}
+
+.checks span:before {
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c8";
+    color: #fff;
+    font-size: 1.3em;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.contactForm input:focus, .contactForm textarea:focus {
+    box-shadow: 0 0 2px #2e8074, 0px 0px 4px #2e8074, 1px 1px 4px #3ab49d, 2px 2px 4px #3ab49d;
+    outline: none;
+    border: solid 1px #3ab49d;
+}
+
+@media screen and (min-width: 600px) {
+    .swrap {
+        margin-top: -20px;
+        margin-left: 50%;
+    }
+    
+    .searchButton {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .swrap {
+        width: 100%;
+        margin: 2px 10px 0 0;
+    }
+}

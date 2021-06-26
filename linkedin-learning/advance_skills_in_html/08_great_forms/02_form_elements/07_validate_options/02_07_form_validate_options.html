@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Attributes</title>
+    
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="02_07.css">
+</head>
+
+<body>
+    
+<!-- Using novalidate, novalidate would be used in cases where you don’t want to validate the form but do want to take advantage of the more useful user interface enhancements that the new input types offer. -->
+    <form action="#" method="get" novalidate>
+        <fieldset>
+        <legend>novalidate</legend>
+             <label for="name">Name: </label>
+             <input type="text" name="name" id="name" required>
+             
+             <label for="email3">Personal Email:</label>
+             <input type="email" name="email3" id="email3" required>
+             <br><input type="submit" value="Submit">
+        </fieldset>
+      </form>
+      
+      
+      
+      
+<!--      formnovalidate 
+     An example use case for the formnovalidate attribute could be on a “save draft” button, where the form has fields that are required for submitting the draft but aren’t required for saving the draft. -->
+      <form action="#" method="get">
+        <fieldset>
+        <legend>formnovalidate</legend>             
+             <label for="email4">Personal Email:</label>
+             <input type="email" name="email4" id="email4" required>
+             <br><input type="submit" value="Submit">
+             <br><input type="submit" value="Submit without validation" formnovalidate>
+        </fieldset>
+      </form>
+      
+      
+      
+      
+      
+<!-- form attribute -->
+         <form action="#" method="get" id="contact">
+            <fieldset>
+                <legend>Contact Us</legend>
+                
+                <label for="fullName">Your Name:</label>
+                <input type="text" name="fullName" id="fullName" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                
+                <label for="msg">Your Message:</label>
+                <textarea name="msg" id="msg"></textarea>
+                
+            </fieldset>
+        </form>
+        
+<!-- This input element resides outside of the contact form, it has been associated to the form by using the 'form="contact" text. -->
+        <div class="outside">
+            <p>This submit button is outside of the form and not within the form tag. We associate it to the form by using the form attribute.</p>
+            <input type="submit" id="submit" value="Contact Us" form="contact">
+        </div>
+        
+</body>
+</html>

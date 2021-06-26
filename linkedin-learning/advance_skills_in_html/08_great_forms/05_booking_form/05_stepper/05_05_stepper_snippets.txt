@@ -1,0 +1,139 @@
+<!-- 
+******** HTML CODE SNIPPETS ******** 
+-->
+<!-- code snip 1 -->
+<h3>Passengers</h3>
+<div id="details">
+    <div class="form-group selectNum">
+       <label class="stepper-label" for="numOfAdults">Adults (18+)</label>
+        <div class="stepper">
+            <button class="minus"><i class="fas fa-minus"></i></button><input class="stepper-control" id="numOfAdults" type="number" value="0"><button class="plus"><i class="fas fa-plus"></i></button>
+     </div>
+    </div>
+                        
+<!-- code snip 2 -->
+<div class="form-group selectNum">
+   <label class="stepper-label" for="numOfKids">Children (0-17)</label>
+    <div class="stepper">
+        <button class="minus" id="minus"><i class="fas fa-minus"></i></button><input class="stepper-control" id="numOfKids" type="number" value="0" max="10"><button class="plus"><i class="fas fa-plus"></i></button>
+ </div>           
+</div>
+
+/* 
+******** CSS CODE SNIPPETS ******** 
+*/
+
+button.plus, button.minus { 
+    border: solid 2px #dfe5e9;
+    background-color: #fff;
+    padding: .5em;
+    cursor: pointer;
+    height: 32px;
+}
+
+button.minus { 
+    border-right-style: none;
+    border-radius: 6px 0 0 6px;
+}
+
+button.plus {
+    border-left-style: none;
+    border-radius: 0 6px 6px 0;
+}
+
+button.plus i, button.minus i { 
+    font-size: 1.5em;
+    color: #4fa3e3;
+}
+
+button:focus {
+    outline: none;
+}
+
+input.stepper-control { 
+    border: solid 2px #dfe5e9;
+    height: 32px;
+    width: 50px;
+    padding: .5em;
+    text-align: center;
+    font-size: 1em;
+}
+
+label.stepper-label { 
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 24px;
+    height: 24px;
+    font-size: 12px;
+    color: #98c9ee;
+}
+      
+/* remove the default up/down arrows from webkit */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+        
+/* remove the default up/down arrows from FF  */
+input[type=number] {
+    -moz-appearance:textfield;
+}
+        
+/* fix for Safari, otherwise stepper component is not on 1 line */
+.stepper {
+    width: 110px;
+}
+
+#details  {
+    display: block;
+}
+
+.form-group.selectNum {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.travelClass {
+    width: 48.5%;
+}
+
+@media screen and (min-width: 600px) {
+
+    #booking {
+        max-width: 850px;
+    }
+
+    #details {
+        display: grid;
+        grid-template-columns: 24.25% 24.25% 48.5%;
+        grid-column-gap: 3%;
+    }
+
+    .travelClass {
+        width: 95%;
+    }
+}
+
+/* 
+******** JS CODE SNIPPETS ******** 
+*/
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>        
+        $('.plus').click( function(){ 
+             var counter = $(this).siblings().filter('input').val(); 
+             counter++; 
+             $(this).siblings().filter('input').val(counter); 
+             return false; 
+        });
+        
+        $('.minus').click( function(){ 
+             var counter = $(this).siblings().filter('input').val();
+            if(counter > 0){
+                counter--;
+                $(this).siblings().filter('input').val(counter);
+            }
+             return false;
+        });
+    </script>

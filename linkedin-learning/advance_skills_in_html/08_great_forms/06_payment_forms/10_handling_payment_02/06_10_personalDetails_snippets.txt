@@ -1,0 +1,89 @@
+<!--
+******** HTML CODE SNIPPETS ******** 
+-->
+<!-- CVV helptip  -->
+<i class="far fa-question-circle fieldIcon tooltip">
+<span class="helperText">The 3 digit security code on the back of your credit card. 
+<img src="images/cc-cvv.gif" alt="CVV code">
+<i class="fas fa-caret-down"></i>
+<i class="fas fa-times-circle close"></i>
+</span>
+</i><!-- icon must go after label or float label will not work  -->
+
+
+
+
+
+/* 
+******** CSS CODE SNIPPETS ******** 
+*/
+/* helper text */
+.fieldAndHelper {
+    position: relative;
+}
+
+.helperText {
+    background-color: #e2fcfd;
+    border: solid 1px #26a3a8;
+    border-radius: 6px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+    color: #333;
+    padding: 1em .75em .5em;
+    font-size: .8em;
+    position: absolute;
+    top: -162px;
+    right: -17px;
+    width: 815%;
+}
+
+.helperText i.fas.fa-caret-down {
+    position: absolute;
+    right: 20px;
+    bottom: -9px;
+    color: #26a3a8;
+}
+
+.helperText i.fas.fa-times-circle.close {
+    position: absolute;
+    right: -9px;
+    top: -7px;
+    color: #26a3a8;
+}
+
+ .hide { display: none;}
+.show {display: block;}
+/* end helper text */
+
+
+ 
+
+
+
+
+/* 
+******** JS CODE SNIPPETS ******** 
+*/
+// CVV tooltip
+// hide the CVV helper text div
+document.querySelector('.helperText').classList.add('hide');
+// make the tooltip able to close on click
+const tooltip = document.querySelector('.tooltip');
+tooltip.addEventListener('click', function(){
+    document.querySelector('.helperText').classList.toggle('show'); // togle the tooltip to show or hide
+    document.querySelector('.helperText').classList.toggle('hide');
+})
+
+   
+// expiration date formatting, add a slash after 2 characters have been entered
+var characterCount
+$('#exp').on('input',function(e){
+    if($(this).val().length == 2 && characterCount < $(this).val().length) {
+        $(this).val($(this).val()+'/');
+    }
+    characterCount = $(this).val().length
+});
+
+
+   
+       

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling for select boxes</title>
+    
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+     
+     <link rel="stylesheet" href="03_09.css">
+</head>
+<body>
+    <section>
+        
+        <form action="" method="post" id="contact">
+            
+<!-- SELECT, full customization with CSS and JS -->
+       <fieldset>
+                <legend>Fancy Select</legend>
+                
+               <select class="fancySelect">
+                    <option>Preferred shipping method:</option>
+                    <option value="mail">Mail</option>
+                    <option value="ups">UPS Delivery</option>
+                    <option value="plane">Overnight Air</option>
+                    <option value="person">Hand Carry</option>
+                  </select>
+                
+                <input type="submit" id="submit" value="Select it">
+            </fieldset>
+        </form>
+        
+    </section>
+    
+<!-- add jQuery -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+<!-- add custom js -->
+ <script>
+// loops through the select and creates a div with an ul and li items that we can easiliy style with CSS. The select box code is still there it is just hidden from the browser or if no js then you don't get the fancy version, so this option degrades nicely
+$('.fancySelect').each(function(){
+    var $this = $(this), numberOfOptions = $(this).children('option').length;
+  
+    // creates new html elements
+    $this.addClass('selectHidden'); 
+    $this.wrap('<div class="select"></div>');
+    $this.after('<div class="selectStyled"></div>');
+
+    var $styledSelect = $this.next('div.selectStyled');
+    $styledSelect.text($this.children('option').eq(0).text());
+  
+    // create the ul
+    var $list = $('<ul />', {
+        'class': 'selectOptions'
+    }).insertAfter($styledSelect);
+  
+    for (var i = 0; i < numberOfOptions; i++) {
+        $('<li />', {
+            text: $this.children('option').eq(i).text(),
+            rel: $this.children('option').eq(i).val()
+        }).appendTo($list);
+    }
+  
+    // this part adds/removes the active class from the ul (opens and closes the menu) 
+    var $listItems = $list.children('li');
+  
+    $styledSelect.click(function(e) {
+        e.stopPropagation();
+        $('div.selectStyled.active').not(this).each(function(){
+            $(this).removeClass('active').next('ul.selectOptions').hide();
+        });
+        $(this).toggleClass('active').next('ul.selectOptions').toggle();
+    });
+  
+    $listItems.click(function(e) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('active');
+        $this.val($(this).attr('rel'));
+        $list.hide();
+    });
+  
+    $(document).click(function() {
+        $styledSelect.removeClass('active');
+        $list.hide();
+    });
+
+});
+</script>
+
+</body>
+</html>

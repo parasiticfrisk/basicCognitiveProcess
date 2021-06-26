@@ -1,0 +1,78 @@
+<!-- 
+******** HTML CODE SNIPPETS ******** 
+-->
+ <div class="field third">
+    <input type="text" id="zip" name="zip" placeholder=" " pattern="[0-9]*" maxlength="5" required>
+    <label for="zip">Zip Code <span class="zip-error">(Not a real zip code)</span></label>
+ </div>
+ 
+ 
+
+/* 
+******** CSS CODE SNIPPETS ******** 
+*/
+label[for="zip"] {
+        position: relative;
+    }
+.zip-error {
+    color: #b10707;
+    margin-left: .5em;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-size: .9em;
+    display: none;
+}
+
+/* 
+******** JS CODE SNIPPETS ******** 
+*/
+
+// ZIP CODE - (this uses jQuery so make sure to place it with the document.ready function)
+
+    function is_int(value) {
+  if ((parseFloat(value) == parseInt(value)) && !isNaN(value)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+$("#zip").keyup(function() { 
+  var el = $(this);
+
+  // Did they type five integers?
+  if ((el.val().length == 5) && (is_int(el.val()))) {
+
+    // Call Ziptastic for information
+    $.ajax({
+      url: "https://zip.getziptastic.com/v2/US/" + el.val(),
+      cache: false,
+      dataType: "json",
+      type: "GET",
+      success: function(result, success) {
+
+        // Fill in the city / state data  
+        $("#city").val(result.city);
+        $("#state").val(result.state);
+
+        $("#zip").blur();
+        $("#address-line-1").show().focus(); 
+
+      },
+
+      error: function(result, success) {
+
+        $(".zip-error").fadeIn(300);
+
+      }
+
+    });
+  } else if (el.val().length < 5) {
+
+    $(".zip-error").fadeOut(200);
+
+  };
+
+});

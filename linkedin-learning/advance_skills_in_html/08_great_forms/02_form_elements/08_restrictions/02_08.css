@@ -1,0 +1,56 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: "Lato", sans-serif
+}
+
+fieldset, .outside {
+    margin: 2em;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    width: 50%;
+}
+
+label{
+    display: block;
+    padding-top: .5em;
+    margin-top: 1em;
+    border-top: solid 1px #dedede;
+}
+
+label:first-of-type {
+    border:none;
+    margin-top: 0;
+}
+
+input {
+    display: block;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.info {
+    font-size: .8em;
+    color: #666;
+    display: inline-block;
+    margin-bottom: .5em;
+}
+
+input:focus {
+    outline: solid 1px #30a5c0;
+}
+
+/* ADD CSS styling for our custom validation fields */
+/* set style for invalid state */
+input:invalid {
+    border: solid 1px #b90808;
+    box-shadow: 1px 1px 4px #a70101a3;
+}
+
+/* Set style for regular and valid state. It is worth noting that the empty value is always considered valid, unless we have added the required attribute. */
+/* set style for valid state */
+input:valid {
+    border: solid 1px #03c093;
+}

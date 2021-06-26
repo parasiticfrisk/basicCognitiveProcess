@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Attributes</title>
+    
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="02_06.css">
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Input Attributes 2</legend>
+            
+            <label for="autofocus">Autofocus</label> 
+            <input type="text" name="autofocus" id="autofocus" autofocus>
+            
+            <label for="required">Required</label> 
+            <input type="text" name="required" id="required" required>
+            
+            <label for="requiredEmail">Required Email</label> 
+            <input type="email" name="requiredEmail" id="requiredEmail" required>
+            
+             <label for="source">How did you hear about us? (Datalist)</label>
+                <datalist id="sources">
+                <select name="source">
+                    <option>please choose...</option>
+                    <option value="Social media">Social Media</option>
+                    <option value="television">Television</option>
+                    <option value="radio">Radio</option>
+                    <option value="newspaper">Newspaper</option>
+                    <option>Other</option>
+                </select>
+                If other, please specify:
+            </datalist>
+            <input id="source" name="source" list="sources">
+                
+<!-- try adding 2 email addresses to the first field, you get an error but the second one allows you to do this seamlessly -->
+                <label for="email1">Email (one)</label>
+                <input type="email" name="email1" id="email1" required>
+                
+                <label for="email2">Email (multiple)</label>
+                <input type="email" name="email2" id="email2" multiple required>
+                
+                <label for="file">File:</label> 
+                <input type="file" name="file" id="file" multiple>
+                       
+                <br><input type="submit">
+                        
+        </fieldset>
+        
+    </form>
+    
+<!-- Using min, max and step-->
+    <form id="output" oninput="result.value=parseInt(x.value)+parseInt(y.value)">
+        <fieldset>
+                <legend>Using min, max, and step</legend>
+                
+                    <input type="range" id="x" min="0" max="80"  step="5" value="0">
+                  + <input type="number" id="y" min="0" max="20" value="0" step="2">
+                  = <output name="result" for="x y"></output>
+                
+            </fieldset>
+    </form>
+    
+
+</body>
+</html>

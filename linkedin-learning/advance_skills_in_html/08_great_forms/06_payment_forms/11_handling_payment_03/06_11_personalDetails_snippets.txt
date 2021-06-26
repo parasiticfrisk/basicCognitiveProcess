@@ -1,0 +1,121 @@
+<!--
+******** HTML CODE SNIPPETS ******** 
+-->
+<div id="diffAddress">
+<!--This code is pulled right from the personalDetails page -->
+<div class="field half">
+<input type="text" id="firstName" name="firstName" placeholder=" " required>
+<label for="firstName">First Name</label>
+</div>
+
+<div class="field half">
+<input type="text" id="lastName" name="lastName" placeholder=" " required>
+<label for="lastName">Last Name</label>
+</div>
+
+<div class="field">
+<input type="text" id="address" name="address" placeholder=" " required>
+<label for="address">Address</label>
+</div>
+
+<div class="field">
+ <input type="text" id="suite" name="suite" placeholder=" ">
+ <label for="suite">(optional) Apartment, suite, etc)</label>
+</div>
+
+<div class="field third">
+<input type="text" id="zip" name="zip" placeholder=" " required>
+<label for="zip">Zip Code</label>
+</div>
+
+<div class="field third">
+ <input type="text" id="city" name="city" placeholder=" " required>
+ <label for="city">City</label>
+</div>
+
+<div class="field third">
+ <input type="text" id="state" name="state" placeholder=" " required>
+ <label for="state">State</label>
+</div>
+
+<div class="field half">
+ <input type="tel" id="phone" name="phone" placeholder=" " required>
+ <label for="phone">Phone (123) 456-7890</label>
+</div>
+</div><!-- end diffAddress -->
+
+
+
+
+
+/* 
+******** CSS CODE SNIPPETS ******** 
+*/
+
+ .paypal {
+    display: none;
+}
+.paypal {
+text-align: center;
+}
+.paypal p {
+  font-size: .9em;
+}
+.far.fa-window-maximize {
+  font-size: 7em;
+  position: relative;
+  display:inline-block;
+}
+.far.fa-window-maximize:after {
+ content: "\f30b"; 
+display: inline-block;
+font-weight: 900;
+color: #ccc;
+position: absolute;
+top: 30px;
+right: -32px;
+font-size: 70px;
+}
+
+.browser { 
+  position: relative;
+  display: inline-block;
+}
+
+.browser:after {
+    content: "\f141";
+    display: inline-block;
+    font-weight: 900;
+    color: #ccc;
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    font-size: 30px;
+    font-family: "Font Awesome 5 Free";
+}
+
+
+
+
+/* 
+******** JS CODE SNIPPETS ******** 
+*/
+
+// make the cc/paypal info boxes show and hide on radio check
+$('input[name="payOption"]').click(function(){
+    var inputValue = $(this).attr("value");
+    var targetBox = $("." + inputValue);
+    $(".paymentBox").not(targetBox).hide();
+    $(targetBox).show();
+});
+
+
+// Show/hide different address when radio button is clicked 
+ $("input[name='billingAddress']").click(function() {
+     if ($("#shippingDiff").is(":checked")) {
+       $("#diffAddress").show();
+     } else {
+       $("#diffAddress").hide();
+     }
+   });  
+       

@@ -1,0 +1,44 @@
+ * {
+    margin:0;
+    padding: 0;
+    font-family: "Nunito", sans-serif
+}
+
+fieldset {
+    margin: 2em;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    max-width: 500px;
+}
+
+label, .checks {
+    display: block;
+    padding-top: .5em;
+    margin-top: 1em;
+    border-top: solid 1px #dedede;
+}
+
+label:first-of-type {
+    border:none;
+    margin-top: 0;
+}
+
+label[for="radio"], label[for="checkbox"] {
+    margin-right:  1em;
+}
+
+label[for="radio"], input[type="radio"], label[for="checkbox"], input[type="checkbox"]{
+    display: inline-block;
+    border:none;
+}
+
+input {
+    display: block;
+    border: solid 1px #999;
+    padding: 4px;
+    margin: .5em;
+}
+
+p {
+    margin-bottom: 0;
+}
