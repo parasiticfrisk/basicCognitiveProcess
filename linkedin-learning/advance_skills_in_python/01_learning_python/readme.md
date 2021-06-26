@@ -10,7 +10,6 @@
 <!-- badge info -->
 [course-badge]:https://img.shields.io/badge/learning-Python-white?logo=Linkedin&labelColor=blue&style=for-the-badge
 [course-link]:https://www.linkedin.com/learning/learning-python/learning-python "Learning Python"
-course-link]:https://www.linkedin.com/learning/paths/advance-your-skills-in-python "Advance Your Skills in Python"
 [license-badge]:https://img.shields.io/badge/learning-license-success?logo=Linkedin&labelColor=black&style=for-the-badge
 
 <br>
