@@ -1,0 +1,147 @@
+<!-- 
+******** HTML CODE SNIPPETS ******** 
+-->
+<!-- fancy search bar, place it before the header tag closes -->
+<div class="swrap">
+    <form action="" id="searchForm">
+      <input type="search">
+      <i class="fa" role="button" aria-label="search"></i>
+    </form>
+</div>
+
+
+/* 
+******** CSS CODE SNIPPETS ******** 
+*/
+/* search form styles */
+#searchForm {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: #3ab49d;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+#searchForm input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+    -moz-appearance: none;/* older firefox */
+    -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
+    appearance: none;
+}
+
+.fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.fa:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f002";
+    font-weight: 900;
+}
+
+#searchForm:hover {
+    width: 80%;
+    cursor: pointer;
+}
+
+#searchForm:hover input {
+    display: block;
+    border: solid 3px #3ab49d;
+}
+
+#searchForm:hover .fa {
+    background: #3ab49d;
+    color: white;
+}
+   
+/* switch icon to arrow*/
+ #searchForm:hover .fa:before {
+    content: "\f061";
+}
+
+@media screen and (min-width:460px) {
+    #searchForm:hover{
+        width: 290px; /* at larger screen will accomodate a longer query (roughly 27 characters)*/
+    }
+}
+
+
+
+/* special fix for firefox only, the positioning of the search element is too high */
+@-moz-document url-prefix() {
+    #searchForm {
+        margin-top: 5px;
+    }
+}
+
+@-moz-document url-prefix() {
+    @media screen and (min-width:600px) {
+        #searchForm {
+            margin-top: 32px;
+            margin-bottom: -25px;
+        }
+    }
+}
+   
+
+/* fix for unwanted movement. We load it here on the body and when the page is loaded we remove the class of preload from the body tag with some JS */
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+/* for unwanted movement on page resize */
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
+
+/* 
+******** JS CODE SNIPPETS ******** 
+*/
+$(document).ready(function() {
+  $('body').removeClass('preload'); // fix for animation movement on page load
+});
+
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+   

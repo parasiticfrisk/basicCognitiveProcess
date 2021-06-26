@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling your form | Pseudo Class</title>
+    
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet" href="03_04.css">
+    
+</head>
+<body>
+   <h1>Pseudo class states for form elements</h1>
+    <form action="#" method="post">
+       
+<!-- :enabled | :disabled -->
+        <fieldset>
+            <legend>:enabled | :disabled</legend>
+            
+            <label for="enabled">Enabled Button</label> 
+            <input type="button" name="enabled" id="enabled" value="Enabled">
+            
+            <label for="disabled">Disabled Button</label> 
+            <input type="button" name="disabled" id="disabled" value="Disabled" disabled>
+            
+        </fieldset>
+     
+<!-- :required | :optional -->   
+        <fieldset>
+            <legend>:required | :optional</legend>
+            
+            <label for="reqEmail">Required</label> 
+            <input type="email" name="reqEmail" id="reqEmail" required>
+            
+            <label for="optEmail" class="opt">Optional</label> 
+            <input type="email" name="optEmail" id="optEmail">
+            
+            <p class="note">* All yellow bordered fields are required</p>
+            
+            <input type="submit">
+            
+        </fieldset>
+        
+<!-- :in-range | :out-of-range-->
+          <fieldset>
+            <legend>:in-range | :out-of-range</legend>
+            
+            <p>To help us better serve you please rate your experience with our company</p>
+            
+            <input type="number" name="rating" id="rating" min="1" max="10">
+            <label for="rating"></label> 
+
+        </fieldset>
+    </form>
+    
+<!-- :valid | :invalid-->
+    <form action="" method="post" id="contact">
+        <fieldset  class="validity">
+            <legend>:valid | :invalid</legend>
+            
+            <label for="name">Name</label> 
+            <input type="name" name="name" id="name" pattern="[a-zA-Z]{3}">
+            
+            <label for="email">Email</label> 
+            <input type="email" name="email" id="email" required>
+            
+            <button type="submit" form="contact" value="Submit">Submit</button>
+        </fieldset>
+        
+<!-- :checked -->
+        <fieldset>
+            <legend>:checked</legend>
+             <div class="checks">
+                    <input type="checkbox" name="checkMe" id="checkMe">
+                    <label for="checkMe">Check me</label>
+                </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

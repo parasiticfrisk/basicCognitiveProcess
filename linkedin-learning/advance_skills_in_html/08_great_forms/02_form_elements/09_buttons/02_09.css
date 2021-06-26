@@ -1,0 +1,73 @@
+ * {
+    margin:0;
+    padding: 0;
+    font-family: "Lato", sans-serif
+}
+
+fieldset, .outside {
+    margin: 2em;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    width: 50%;
+}
+
+label{
+    display: block;
+    padding-top: .5em;
+    margin-top: 1em;
+    border-top: solid 1px #dedede;
+}
+
+label:first-of-type {
+    border:none;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/* Step 1: enter input, button rule here */
+input, button {
+    background-color: #dedede;
+    border: solid 1px #999;
+    display: block;
+    margin: .25em;
+    padding: .25em;
+}
+
+/* Step 2: enter custom button styling here */
+button#checkbtn {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: .5em 1em;
+    border-radius: .5em;
+}
+
+button#checkbtn:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f291";
+    padding-right: .25em;
+}
+
+button#applybtn {
+    background: rgb(21,104,244);
+    background: linear-gradient(90deg, rgba(21,104,244,1) 0%, rgba(155,93,254,0.95) 100%);
+    color: #fff;
+    font-size: 1em;
+    padding: .5em 1em;
+    border-radius: .25em;
+    box-shadow: 0px 2px 6px rgba(38,9,106,.7);
+}
+
+ button#applybtn:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f061";
+    padding-left: .75em;
+}
+

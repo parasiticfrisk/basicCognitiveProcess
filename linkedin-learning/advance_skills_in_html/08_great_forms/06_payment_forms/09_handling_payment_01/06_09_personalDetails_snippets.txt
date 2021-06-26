@@ -1,0 +1,43 @@
+/* 
+******** JS CODE SNIPPETS ******** 
+*/
+
+    // format the CC as user types number
+    $("#ccNum").on("keydown", function(e) {
+        var cursor = this.selectionStart;
+        if (this.selectionEnd != cursor) return;
+        if (e.which == 46) {
+            if (this.value[cursor] == " ") this.selectionStart++;
+        } else if (e.which == 8) {
+            if (cursor && this.value[cursor - 1] == " ") this.selectionEnd--;
+        }
+    }).on("input", function() {
+        var value = this.value;
+        var cursor = this.selectionStart;
+        var matches = value.substring(0, cursor).match(/[^0-9]/g);
+        if (matches) cursor -= matches.length;
+        value = value.replace(/[^0-9]/g, "").substring(0, 16);
+        var formatted = "";
+        for (var i=0, n=value.length; i<n; i++) {
+            if (i && i % 4 == 0) {
+                if (formatted.length <= cursor) cursor++;
+                formatted += " ";
+            }
+            formatted += value[i];
+        }
+        if (formatted == this.value) return;
+        this.value = formatted;
+        this.selectionEnd = cursor;
+    });
+
+    // change credit card icon color      
+       $('#ccNum').keyup(function(){
+        var value = $(this).val();
+           if (value.match(/^4/)) { // if the value starts with a 4 (visa)
+                $('i.fa-cc-visa').addClass('visa'); 
+            } else if(value.match(/^5/)) { // if the value starts with a 5 (mc)
+                 $('i.fa-cc-mastercard').addClass('mc'); 
+            } else { // if neither is true remove either of the classes
+                $('i.cc').removeClass('visa').removeClass('mc');;
+            }
+       })   

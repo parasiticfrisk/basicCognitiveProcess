@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Attribute</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="02_08.css">
+
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Using the Pattern attribute</legend>
+            <label for="userName">User Name</label> 
+            <input type="text" name="userName" id="userName"  pattern="[A-Za-z\d\.]{4,10}" required>
+            
+<!--            <label for="p1">Pattern 1</label> -->
+<!-- only consist of lowercase letters; no capital letters, numbers or other special characters allowed. In addition, the input length shouldn’t be more than 10 characters. -->
+<!--
+            <input type="text" name="p1" id="p1" pattern="[a-z]{1,10}">
+            <span class="info">only use lowercase letters and length should not exceed 10 characters</span>
+-->
+            
+<!--            <label for="p2">Pattern 2</label> -->
+<!-- only consist of  letters and numbers (no other special characters allowed). In addition, the input length should be between 3 and 10 characters. -->
+<!--
+            <input type="text" name="p2" id="p2" pattern="[A-Za-z0-9]{3,10}">
+            <span class="info">only use letters and numbers and length should be a minimum of 3 characters and not exceed 10 characters</span>
+-->
+            
+<!--            <label for="p3">Pattern 3, zip code</label> -->
+<!-- Format is 12345 or 12345-1234. In the following pattern \d, \D: ANY ONE digit/non-digit character. Digits are [0-9], then we specify that we expect 5 numbers. 
+To match a character having special meaning in regex, you need to use a escape sequence prefix with a backslash [\-] allows for the user to enter a - (dash) and then we request 4 digits -->
+<!--
+            <input type="text" name="p3" id="p3" pattern="(\d{5}([\-]\d{4})?)">
+            <span class="info">Enter a US based zip code, format can be ##### or #####-####</span>
+-->
+            
+<!-- US based phone number: \d{3}[\-]\d{3}[\-]\d{4}-->
+<!--
+           <label for="p4">Pattern 4: US based phone</label> 
+            <input type="text" name="p4" id="p4" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+            <span class="info">Enter your US based phone number in this pattern: 123-456-7890</span>
+-->
+            
+ <br><input type="submit">         
+        </fieldset>
+        
+<!-- Customize validation message -->
+        <fieldset>
+            <legend>Pattern with improved validation method</legend>
+            
+            <label for="p5">Pattern 5</label> 
+<!-- only consist of lowercase letters and shouldn’t be more than 10 characters.-->
+            <input type="text" name="p5" id="p5" pattern="[a-z]{1,10}" title="Entry should only contain lowercase letters and not exceed 10 characters. e.g. octopus">
+        </fieldset>
+        
+<!-- Customize validation message using JS-->
+       
+         <fieldset>
+            <legend>Alternate pattern validation method using JS</legend>
+            
+            <label for="p6">Pattern 6</label> 
+<!--only consist of lowercase letters and/or numbers.-->
+            <input type="text" name="p6" id="p6" pattern="[a-z]{1,10}">
+        </fieldset>
+        
+        <div class="outside">
+             <br><input type="submit">   
+        </div>
+    </form>
+    
+    <script>
+        var input = document.getElementById('p6'); // select our element
+        // The oninvalid event inherits an event object which contains a few properties, including the target property (the invalid element) and the validation Message which contains the error text message. In the example above, we have overriden the text message using the setCustomValidity() method.
+        input.oninvalid = function(event) {
+            event.target.setCustomValidity('Your entry should only contain lowercase letters and not exceed 10 characters. e.g. octopus');
+        }
+    </script>
+
+</body>
+</html>

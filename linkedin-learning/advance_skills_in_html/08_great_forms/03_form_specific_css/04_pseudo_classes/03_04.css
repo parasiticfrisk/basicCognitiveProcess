@@ -1,0 +1,120 @@
+* {
+	margin:0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    margin: 1em;
+}
+
+fieldset {
+	margin: 2em;
+	padding: 1em 2em;
+	border: solid 1px #ccc;
+	border-radius: 4px;
+	width: 50%;
+}
+
+legend {
+	padding: 0 .5em;
+}
+
+label:first-of-type {
+	border:none;
+	margin-top: 0;
+}
+
+input {
+	display: block;
+	border: solid 1px #999;
+	padding: .5em 1em;
+	margin-bottom: 1em;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+.note {
+	font-style: italic;
+	color: #999;
+	font-size: .8em;
+}
+
+/* use :disabled to reduce the opacity and make more of a difference */
+input:disabled {
+	opacity: .5;
+}
+
+/*:required and :optional */
+input:required {
+	border: 1px solid #ffc107;
+}
+
+input:optional {
+/* we could use this to target non-required fields but it will select our submit button too. */
+/* border: 1px solid #90d4eb; */
+}
+
+label.opt::after{ 
+	content: " (optional)"; 
+	color: #999;
+	font-size: .8em;
+}
+
+/* in-range and out-of-range */
+input[type="number"] {
+	font-size: 1.1em;
+	display: inline-block;
+}
+
+input[type="number"]:in-range {
+	background-color: #90d4eb;
+}
+
+input:in-range + label:after {
+  content: " Thank you for your feedback.";
+}
+
+input[type="number"]:out-of-range {
+  background-color: #fa8072;
+  color: white;
+}
+
+input:out-of-range + label:after {
+  content: "Please enter a value from 1-10.";
+  color: #fa8072;
+}
+
+/*= :valid | :invalid */
+/*This will only work on name if we enter 3 characters because of the pattern attribute we assigned to this field*/
+.validity input:valid {
+	background-color: #b9eeb9;
+	border: solid 1px #6fa66f;
+}
+
+.validity input:invalid {
+	background-color: #fa8072;
+	border: solid 1px #b05d54;
+}
+
+.validity button {
+	display: block;
+	border: solid 1px #999;
+	padding: .5em 1em;
+	margin-bottom: 1em;
+}
+
+/* :checked */
+[type=checkbox] {
+	display: inline-block;
+	border: solid 1px #999;
+	width: 15px;
+	height: 15px;
+}
+[type=checkbox]:checked + label { /*  select a label that is placed immediately after the checked checkbox */
+	font-weight: bold;
+	font-size: 1.1rem;
+	color: #b05d54;
+}

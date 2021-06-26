@@ -1,0 +1,45 @@
+<!-- 
+******** HTML CODE SNIPPET ******** 
+-->
+<!-- New fix, need add maxlength="12" and placeholder="111-222-3333" -->
+<input type="tel" name="phone" id="phone" pattern="^\d{3}-\d{3}-\d{4}$" maxlength="12" placeholder="111-222-3333" required>
+
+<!-- add meta for phone number, so we can style it  -->
+<meta name="format-detection" content="telephone=no">
+
+<!-- Adjust the phone number so we can style it for mobile, line 109 -->
+<p>Phone: <a href="tel:123-456-7890">123-456-7890</a>
+
+
+/*
+******** CSS CODE SNIPPETS ******** 
+*/
+
+/* fix to style button on mobile */
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 4px;
+}
+
+/* adjust phone link, place in main.css */
+a[href^="tel:"] {
+  color: #2d8073;
+}
+
+
+/*
+******** JS CODE SNIPPETS ******** 
+*/
+
+// code for input mask on phone number
+// fix for tel keypad missing dashes on mobile device, this will automatically add them
+$('input[type="tel"]#phone').keyup(function(event) {
+    var t = event.target, v = t.value;
+    if (v.length == 3) { t.value = v + '-'; }
+    if (v.length == 7) { t.value = v + '-'; }
+});
