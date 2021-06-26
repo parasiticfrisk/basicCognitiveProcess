@@ -1,0 +1,12 @@
+body {
+    font-family: sans-serif;
+    font-size: 1.25em;
+    counter-reset: figureCounter;
+}
+figcaption::before {
+    counter-increment: figureCounter;
+    content: "Figure " counter(figureCounter) ": ";
+}
+h1 {
+    font-size: 115%;
+}

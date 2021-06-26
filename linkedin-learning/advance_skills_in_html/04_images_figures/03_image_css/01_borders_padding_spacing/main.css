@@ -1,0 +1,10 @@
+body {
+  font-size: 22pt;
+}
+h1 {
+  font-size: 115%;
+}
+img {
+  border: 4px double black;
+  padding: 4px;
+}
