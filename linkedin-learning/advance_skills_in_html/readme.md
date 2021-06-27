@@ -29,25 +29,20 @@
 | :------------------------------------------ |
 | [HTML Essential Training][ht01]             |
 | [Crafting Meaningful HTML][ht02]            |
-| [HTML & CSS: Linking][ht03]                 |
-| [HTML: Images and Figures][ht04]            |
-| [HTML: Tables][ht05]                        |
-| [HTML: Metadata in the Head][ht06]          |
-| [HTML & CSS: Creating Forms][ht07]          |
+| HTML & CSS: [Linking][ht03]                 |
+| HTML: [Images and Figures][ht04]            |
+| HTML: [Tables][ht05]                        |
+| HTML: [Metadata in the Head][ht06]          |
+| HTML & CSS: [Creating Forms][ht07]          |
 | [Building Great Forms][ht08]                |
 | [Learning Web Audio and Video][ht09]        |
-| [HTML: Structured Semantic Data][ht10]      |
+| HTML: [Structured Semantic Data][ht10]      |
 | [Developing for Web Performance][ht11]      |
 
 <br>
 
 ---
-### Notice
-Licensed under the LinkedIn Learning Exercise File License. See [LICENSE] for license information.
-
-<br>
-
-Please note, this project may automatically load third party code from external repositories (for example, NPM modules, Composer packages, or other dependencies). If so, such third party code may be subject to other license terms than as set forth above. In addition, such third party code may also depend on and load multiple tiers of dependencies. Please review the applicable licenses of the additional dependencies.
+#### Licensed under the LinkedIn Learning [Exercise File License][LICENSE].
 
 [LICENSE]:../LICENSE "LinkedIn Learning License"
 
@@ -62,4 +57,4 @@ Please note, this project may automatically load third party code from external 
 [ht08]:08_great_forms
 [ht09]:09_audio_video
 [ht10]:10_semantic_data
-[ht11]:https://www.linkedin.com/learning/developing-for-web-performance
+[ht11]:https://www.linkedin.com/learning/developing-for-web-performance "external: Developing for Web Performance"
