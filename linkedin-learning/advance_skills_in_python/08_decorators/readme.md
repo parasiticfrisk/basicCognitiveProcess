@@ -36,11 +36,6 @@ Decorators are an increasingly important feature in Python. They add functionali
 <br>
 
 ---
-### Notice
-Licensed under the LinkedIn Learning Exercise File License. See [LICENSE] for license information.
-
-<br>
-
-Please note, this project may automatically load third party code from external repositories (for example, NPM modules, Composer packages, or other dependencies). If so, such third party code may be subject to other license terms than as set forth above. In addition, such third party code may also depend on and load multiple tiers of dependencies. Please review the applicable licenses of the additional dependencies.
+#### Licensed under the LinkedIn Learning [Exercise File License][LICENSE].
 
 [LICENSE]:../../LICENSE "LinkedIn Learning License"

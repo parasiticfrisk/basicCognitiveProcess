@@ -33,25 +33,20 @@ Python is an in-demand programming language that can help you unlock the door to
 | [Learning Python][py01]                                    |
 | [Python Essential Training][py02]                          |
 | [Python Object-Oriented Programming][py03]                 |
-| [Programming Foundations: Data Structures][py04]           |
-| [Python Data Structures: Stacks, Queues, and Deques][py05] |
-| [Python Data Structures: Linked Lists][py06]               |
-| [Python Data Structures: Dictionaries][py07]               |
-| [Programming Foundations: Algorithms][py08]                |
+| Programming Foundations: [Data Structures][py04]           |
+| Python Data Structures: [Stacks, Queues, and Deques][py05] |
+| Python Data Structures: [Linked Lists][py06]               |
+| Python Data Structures: [Dictionaries][py07]               |
+| Programming Foundations: [Algorithms][py08]                |
 | [Python Standard Library Essential Training][py09]         |
-| [Python: Decroators][py10]                                 |
+| Python: [Decroators][py10]                                 |
 | [Advanced Python][py11]                                    |
 | [Python Essential Libraries][py12]                         |
 
 <br>
 
 ---
-### Notice
-Licensed under the LinkedIn Learning Exercise File License. See [LICENSE] for license information.
-
-<br>
-
-Please note, this project may automatically load third party code from external repositories (for example, NPM modules, Composer packages, or other dependencies). If so, such third party code may be subject to other license terms than as set forth above. In addition, such third party code may also depend on and load multiple tiers of dependencies. Please review the applicable licenses of the additional dependencies.
+#### Licensed under the LinkedIn Learning [Exercise File License][LICENSE].
 
 [LICENSE]:../LICENSE "LinkedIn Learning License"
 
