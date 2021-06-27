@@ -27,45 +27,40 @@ Programmers are in higher demand today than ever before. Get the essential skill
 ---
 <br>
 
-| <h3 align="center">Programming Foundations</h3> |
-| :---------------------------------------------- |
-| [Fundamentals][pf01]                            |
-| [Beyond the Fundamentals][pf02]                 |
-| [Object-Oriented Design][pf03]                  |
-| [Algorithms][pf04]                              |
-| [Design Patterns][pf05]                         |
-| [Data Structures][pf06]                         |
-| [Databases][pf07]                               |
-| [APIs and Web Services][pf08]                   |
-| [Web Security][pf09]                            |
-| [Test-Driven Development][pf10]                 |
-| [Software Testing/QA][pf11]                     |
-| [Secure Coding][pf12]                           |
-| [Fuzzy Logic][pf13]                             |
+| <h3 align="center">Become a Programmer</h3>              |
+| :------------------------------------------------------- |
+| Programming Foundations: [Fundamentals][pf01]            |
+| Programming Foundations: [Beyond the Fundamentals][pf02] |
+| Programming Foundations: [Object-Oriented Design][pf03]  |
+| Programming Foundations: [Algorithms][pf04]              |
+| Programming Foundations: [Design Patterns][pf05]         |
+| Programming Foundations: [Data Structures][pf06]         |
+| Programming Foundations: [Databases][pf07]               |
+| Programming Foundations: [APIs and Web Services][pf08]   |
+| Programming Foundations: [Web Security][pf09]            |
+| Programming Foundations: [Test-Driven Development][pf10] |
+| Programming Foundations: [Software Testing/QA][pf11]     |
+| Programming Foundations: [Secure Coding][pf12]           |
+| Programming Foundations: [Fuzzy Logic][pf13]             |
 
 <br>
 
 ---
-### Notice
-Licensed under the LinkedIn Learning Exercise File License. See [LICENSE] for license information.
-
-<br>
-
-Please note, this project may automatically load third party code from external repositories (for example, NPM modules, Composer packages, or other dependencies). If so, such third party code may be subject to other license terms than as set forth above. In addition, such third party code may also depend on and load multiple tiers of dependencies. Please review the applicable licenses of the additional dependencies.
+#### Licensed under the LinkedIn Learning [Exercise File License][LICENSE].
 
 [LICENSE]:../LICENSE "LinkedIn Learning License"
 
 <!-- course quick links -->
 [pf01]:01_fundamentals
 [pf02]:02_beyond_fundamentals
-[pf03]:https://www.linkedin.com/learning/programming-foundations-object-oriented-design-3
+[pf03]:https://www.linkedin.com/learning/programming-foundations-object-oriented-design-3 "external: Object-Oriented Design"
 [pf04]:03_algorithms
 [pf05]:04_design_patterns
 [pf06]:05_data_structures
-[pf07]:https://www.linkedin.com/learning/programming-foundations-databases-2
+[pf07]:https://www.linkedin.com/learning/programming-foundations-databases-2 "external: Databases"
 [pf08]:06_apis_web_services
-[pf09]:https://www.linkedin.com/learning/programming-foundations-web-security-2
+[pf09]:https://www.linkedin.com/learning/programming-foundations-web-security-2 "external: Web Security"
 [pf10]:07_test_driven_development
-[pf11]:https://www.linkedin.com/learning/programming-foundations-software-testing-qa
-[pf12]:https://www.linkedin.com/learning/programming-foundations-secure-coding
-[pf13]:https://www.linkedin.com/learning/programming-foundations-fuzzy-logic
+[pf11]:https://www.linkedin.com/learning/programming-foundations-software-testing-qa "external: Software Testing/QA"
+[pf12]:https://www.linkedin.com/learning/programming-foundations-secure-coding "external: Secure Coding"
+[pf13]:https://www.linkedin.com/learning/programming-foundations-fuzzy-logic "external: Fuzzy Logic"
