@@ -30,12 +30,12 @@ Now that you've learned the basics of Python programming, it's time to dive into
 
 | <h3 align="center">Become a Python Developer</h3>         |
 | :-------------------------------------------------------- |
-| [Python: Design Patterns][py01]                           |
+| Python: [Design Patterns][py01]                           |
 | [Learning Python Generators][py02]                        |
 | [Effective Serialization with Python][py03]               |
 | [Python GUI Development with Tkinter][py04]               |
 | [Secure Coding in Python][py05]                           |
-| [Programming Foundations: Real-World Examples][py06]      |
+| Programming Foundations: [Real-World Examples][py06]      |
 | [Building Tools in Python][py07]                          |
 | [Unit Testing in Python][py08]                            |
 | [Python Parallel and Concurrent Programming Part 1][py09] |
@@ -45,12 +45,7 @@ Now that you've learned the basics of Python programming, it's time to dive into
 <br>
 
 ---
-### Notice
-Licensed under the LinkedIn Learning Exercise File License. See [LICENSE] for license information.
-
-<br>
-
-Please note, this project may automatically load third party code from external repositories (for example, NPM modules, Composer packages, or other dependencies). If so, such third party code may be subject to other license terms than as set forth above. In addition, such third party code may also depend on and load multiple tiers of dependencies. Please review the applicable licenses of the additional dependencies.
+#### Licensed under the LinkedIn Learning [Exercise File License][LICENSE].
 
 [LICENSE]:../LICENSE "LinkedIn Learning License"
 
