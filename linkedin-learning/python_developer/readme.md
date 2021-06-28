@@ -60,4 +60,4 @@ Now that you've learned the basics of Python programming, it's time to dive into
 [py08]:08_unit_testing
 [py09]:09_parallel_concurrent_01
 [py10]:10_parallel_concurrent_02
-[py11]:11_python_interview
+[py11]:https://www.linkedin.com/learning/nail-your-python-interview "external: Nail Your Python Interview"
