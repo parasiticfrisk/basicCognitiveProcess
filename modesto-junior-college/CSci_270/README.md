@@ -2,15 +2,15 @@
 
 # Introduction to Programming (CSCI 270)
 
-![school][school-badge]
-[![license][license-badge]][&copy]
+![school-badge]
+[![license-badge]][LICENSE]
 
 </div>
 
 <!-- badge info -->
-[school-badge]:https://img.shields.io/badge/MJC-CSci%20270-silver?labelColor=midnightblue&style=for-the-badge
-[license-badge]:https://img.shields.io/github/license/parasiticfrisk/basic-cognitive-process?color=informational&&style=for-the-badge
-[&copy]:LICENSE "MIT License"
+[school-badge]:https://img.shields.io/badge/MJC-CSci%20270-silver?labelColor=darkblue&style=for-the-badge
+[license-badge]:https://img.shields.io/github/license/parasiticfrisk/basic-cognitive-process?color=success&&style=for-the-badge
+[LICENSE]:LICENSE "MIT License"
 
 <br>
 
@@ -19,14 +19,8 @@ First course in computer compliant with the standards of the Association for Com
 
 <br>
 
-### Note to MJC Students:
-Please read the [Academic Honesty Policy](AcademicHonestyPolicy) before continuing. The Computer Science department is aware of this repository.
-
----
-<br>
-
-| Project                             | Goals                                                                                                                                                                                                                                                                                      |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <h3 align="center">Project</h3>     | <h3 align="center">Goals</h3>                                                                                                                                                                                                                                                              |
+| :---------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Guessing Game][lab01]              | Key in a known working program and play the game                                                                                                                                                                                                                                           |
 | [Birth Sum][lab02]                  | Work with inputs, outputs, & the + operator                                                                                                                                                                                                                                                |
 | [Coin Calculator][lab03]            | Learn the arithmetic operators                                                                                                                                                                                                                                                             |
@@ -50,3 +44,11 @@ Please read the [Academic Honesty Policy](AcademicHonestyPolicy) before continui
 [lab09]:labs/lab09/ "Personality Calculator 1.3"
 [lab10]:labs/lab10/ "Personality Calculator 1.4"
 [lab11]:labs/lab11/ "Final Project"
+
+<br>
+
+---
+#### Notice
+By viewing and/or interacting with these files as a current or future student of computer science, computer electronics, computer information systems, or related field of study, you agree to the terms of the [Academic Honesty Policy].
+
+[Academic Honesty Policy]:../academic_honesty_policy
