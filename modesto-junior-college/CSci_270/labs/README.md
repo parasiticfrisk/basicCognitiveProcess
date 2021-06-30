@@ -2,20 +2,20 @@
 
 # Introduction to Programming: Labs
 
-![school][school-badge]
-[![license][license-badge]][&copy]
+![school-badge]
+[![license-badge]][LICENSE]
 
 </div>
 
 <!-- badge info -->
-[school-badge]:https://img.shields.io/badge/MJC-CSci%20270-silver?labelColor=midnightblue&style=for-the-badge
-[license-badge]:https://img.shields.io/github/license/parasiticfrisk/basic-cognitive-process?color=informational&&style=for-the-badge
-[&copy]:../LICENSE "MIT License"
+[school-badge]:https://img.shields.io/badge/MJC-CSci%20270-silver?labelColor=darkblue&style=for-the-badge
+[license-badge]:https://img.shields.io/github/license/parasiticfrisk/basic-cognitive-process?color=success&&style=for-the-badge
+[LICENSE]:../LICENSE "MIT License"
 
 <br>
 
-| Projects                            | Goals                                                                                                                                                                                                                                                                                      |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <h3 align="center">Projects</h3>    | <h3 align="center">Goals</h3>                                                                                                                                                                                                                                                              |
+| :---------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Guessing Game][lab01]              | Key in a known working program and play the game                                                                                                                                                                                                                                           |
 | [Birth Sum][lab02]                  | Work with inputs, outputs, & the + operator                                                                                                                                                                                                                                                |
 | [Coin Calculator][lab03]            | Learn the arithmetic operators                                                                                                                                                                                                                                                             |
@@ -39,3 +39,11 @@
 [lab09]:lab09/ "Personality Calculator 1.3"
 [lab10]:lab10/ "Personality Calculator 1.4"
 [lab11]:lab11/ "Final Project"
+
+<br>
+
+---
+#### Notice
+By viewing and/or interacting with these files as a current or future student of computer science, computer electronics, computer information systems, or related field of study, you agree to the terms of the [Academic Honesty Policy].
+
+[Academic Honesty Policy]:../../academic_honesty_policy
