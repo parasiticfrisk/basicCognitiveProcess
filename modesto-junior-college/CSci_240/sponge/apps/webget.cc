@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
         // itself, so arg count = 3 in total).
         if (argc != 3) {
             cerr << "Usage: " << argv[0] << " HOST PATH\n";
-            cerr << "\tExample: " << argv[0] << " stanford.edu /class/cs144\n";
+            cerr << "\tExample: " << argv[0] << " mjc.edu /class/cs240\n";
             return EXIT_FAILURE;
         }
 

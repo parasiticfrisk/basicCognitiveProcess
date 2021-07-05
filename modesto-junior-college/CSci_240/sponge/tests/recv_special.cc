@@ -39,12 +39,12 @@ int main() {
             test.execute(SegmentArrives{}
                              .with_syn()
                              .with_seqno(isn)
-                             .with_data("Hello, CS144!")
+                             .with_data("Hello, CS240!")
                              .with_result(SegmentArrives::Result::OK));
             test.execute(ExpectState{TCPReceiverStateSummary::SYN_RECV});
             test.execute(ExpectAckno{WrappingInt32{isn + 14}});
             test.execute(ExpectUnassembledBytes{0});
-            test.execute(ExpectBytes{"Hello, CS144!"});
+            test.execute(ExpectBytes{"Hello, CS240!"});
         }
 
         /* empty segment */
@@ -91,11 +91,11 @@ int main() {
             test.execute(ExpectState{TCPReceiverStateSummary::SYN_RECV});
             test.execute(SegmentArrives{}
                              .with_fin()
-                             .with_data("Goodbye, CS144!")
+                             .with_data("Goodbye, CS240!")
                              .with_seqno(isn + 1)
                              .with_result(SegmentArrives::Result::OK));
             test.execute(ExpectState{TCPReceiverStateSummary::FIN_RECV});
-            test.execute(ExpectBytes{"Goodbye, CS144!"});
+            test.execute(ExpectBytes{"Goodbye, CS240!"});
             test.execute(ExpectAckno{WrappingInt32{isn + 17}});
             test.execute(ExpectEof{});
         }
@@ -109,7 +109,7 @@ int main() {
             test.execute(ExpectState{TCPReceiverStateSummary::SYN_RECV});
             test.execute(SegmentArrives{}
                              .with_fin()
-                             .with_data("oodbye, CS144!")
+                             .with_data("Goodbye, CS240!")
                              .with_seqno(isn + 2)
                              .with_result(SegmentArrives::Result::OK));
             test.execute(ExpectState{TCPReceiverStateSummary::SYN_RECV});
@@ -118,7 +118,7 @@ int main() {
             test.execute(ExpectInputNotEnded{});
             test.execute(SegmentArrives{}.with_data("G").with_seqno(isn + 1).with_result(SegmentArrives::Result::OK));
             test.execute(ExpectState{TCPReceiverStateSummary::FIN_RECV});
-            test.execute(ExpectBytes{"Goodbye, CS144!"});
+            test.execute(ExpectBytes{"Goodbye, CS240!"});
             test.execute(ExpectAckno{WrappingInt32{isn + 17}});
             test.execute(ExpectEof{});
         }
@@ -131,13 +131,13 @@ int main() {
             test.execute(SegmentArrives{}
                              .with_syn()
                              .with_seqno(isn)
-                             .with_data("Hello and goodbye, CS144!")
+                             .with_data("Hello and goodbye, CS240!")
                              .with_fin()
                              .with_result(SegmentArrives::Result::OK));
             test.execute(ExpectState{TCPReceiverStateSummary::FIN_RECV});
             test.execute(ExpectAckno{WrappingInt32{isn + 27}});
             test.execute(ExpectUnassembledBytes{0});
-            test.execute(ExpectBytes{"Hello and goodbye, CS144!"});
+            test.execute(ExpectBytes{"Hello and goodbye, CS240!"});
             test.execute(ExpectEof{});
         }
     } catch (const exception &e) {
