@@ -1,0 +1,39 @@
+Item #	
+Product or Service	
+Price (ea.)	
+Retail Price (Case)	
+Case Discount	
+12+ Case Price	
+12+ Case Discount
+
+100050	
+Advance Pet Oral Care Toothbrush and Toothpaste	
+$9.55 	
+$108.87	
+$5.73	
+$103.14	
+$11.46
+
+100043	
+Basic Teeth Cleaning and Exam	
+$100.00 	
+$1,140.00	
+$60.00	
+$1,080.00	
+$120.00
+
+100013	
+Calm Cat Anxiety Relief Spray	
+$9.49 	
+$108.19	
+$5.69	
+$102.49	
+$11.39
+
+100041	
+Cat Hairball Remedy Gel	
+$6.00 	
+$68.40	
+$3.60	
+$64.80	
+$7.20

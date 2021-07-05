@@ -1,0 +1,109 @@
+<!-- 
+******** HTML CODE SNIPPETS ******** 
+-->
+<!-- HELP-TIP 1 TEXT -->
+<!-- help-tip for password input field -->
+<i class="fas fa-question-circle tooltip">
+<!-- The span tag holds our help-tip message. -->
+     <span class="helperText" id="tt">Make sure your password contains at least 10 characters, 1 upper and 1 lower case letter, 1 number and 1 symbol
+        <i class="fas fa-caret-down"></i>
+        <i class="fas fa-times-circle close"></i>
+    </span>
+</i>
+                        
+<!-- HELP-TIP 2 TEXT -->                     
+<!-- help-tip for city input field -->
+ <i class="fas fa-question-circle help-tip city">
+     <span class="helperText" id="cty">Why do we collect this information? To personalize our offerings based on your location. You can always change or edit this under your account settings. 
+        <i class="fas fa-caret-down"></i>
+        <i class="fas fa-times-circle close"></i>
+    </span>
+ </i>
+ 
+/* 
+******** CSS CODE SNIPPETS ******** 
+*/
+ 
+div#pwdWrap {
+    position: relative; 
+}
+
+#cityWrap {
+    position: relative;
+    display: flex;
+}
+
+i.fas.fa-question-circle {
+    position: absolute;
+    right: 9px;
+    top: -18px;
+    font-size: .9em;
+    color: rgba(221,113,6,.8);
+}
+
+/* helper tip box */
+.show {
+    display: block;
+    padding: 5px 8px;
+    background: rgb(221,113,6);
+    color: #fff;
+    z-index: 9;
+    font-size: 0.75em;
+    line-height: 18px;
+	top: -91px;
+    left: -163px;
+    width: 1355%;
+    border: solid 1px #fff;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+}
+
+.show#cty {
+	top: -110px;
+}
+
+.hide {
+    display: none;
+}
+/* close icon (x) */
+i.fas.fa-times-circle {
+    position: absolute;
+    top: -11px;
+    right: -10px;
+    z-index: 160;
+    color: rgb(221,113,6);
+    font-size: 1rem;
+}
+/* downward pointing arrow */
+i.fas.fa-caret-down {
+    position: absolute;
+    bottom: -10px;
+    left: 85%;
+    font-size: 1.5em;
+    color: rgb(221,113,6);
+}
+
+
+ 
+/* 
+******** JAVASCRIPT CODE SNIPPETS ********
+*/
+// password help-tip
+// hide the password helper text div
+document.querySelector('#tt').classList.add('hide');
+// make the tooltip able to close on click
+const tooltip = document.querySelector('.tooltip');
+tooltip.addEventListener('click', function(){
+    document.querySelector('#tt').classList.toggle('show'); // togle the tooltip to show or hide
+    document.querySelector('#tt').classList.toggle('hide');
+})
+
+//city help-tip
+ // hide the helper text div
+document.querySelector('#cty').classList.add('hide'); // hide the tooltip on page load
+const cityTooltip = document.querySelector('.tooltip.city');
+cityTooltip.addEventListener('click', function(){
+    document.querySelector('#cty').classList.toggle('show'); // togle the tooltip to show or hide
+    document.querySelector('#cty').classList.toggle('hide');
+})

@@ -1,0 +1,108 @@
+/* 
+******** CSS CODE SNIPPETS ******** 
+*/
+button.plus, button.minus {
+    position: absolute;
+    height: 32px;
+}
+
+button.minus {
+    left: 5px;
+}
+
+button.plus {
+    right: 40px;
+}
+
+/* stepper input */
+input.stepper-control {
+    position: absolute;
+    left: 32px;
+}
+
+/* stepper wrapper, need to adjust width and set position for mobile */
+.stepper {
+    width: 150px; /* make a little wider */
+    position: relative; /* need this so we can use absolute on children */
+}
+
+/* adjustment for spacing and position for stepper elements on mobile */
+.form-group.selectNum {
+    width: 40%;
+}
+
+/* adjustment for position and spacing on travel class element on mobile */
+.travelClass {
+    width: 100%;
+    margin-top: 2.5em; /* on small screen need more spacing between this and steppers */
+}
+
+/* make sure that the label appears in front */
+#flightBook .form-label {
+    z-index: 10;
+}
+
+/* remove browsers default styles (gradient bg) for date inputs and make it 'invis' so we can custom style it */
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    border:1px solid #ecf0f1;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+    position: relative; /* need to position relative so I can position the date info*/
+}
+
+/* style the date input elements, need to remove browsers defaults and add custom so this works the same on mobile */
+#flightBook .form-control:[type="date"] {
+    width: 100%;
+	min-width: 230px;
+}
+
+/* fix for double top border on mobile */
+#flightBook .form-control, #flightBook .stepper-control {
+   background-clip: padding-box;
+}
+
+/* custom focus style */
+input:focus, select:focus {
+    /* border: solid 1px #3dc2dc; */
+    outline: solid 2px #3dc2dc;
+    outline: none;
+    border: 0;
+    box-shadow: 0 0 5px #3dc2dc;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 430px) {
+    #flightBook .form-control:[type="date"] {
+        min-width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    body {
+        height: 100vh;
+    }
+    
+    /* bring travel class item up so it aligns with passengers, adjust width */
+    .travelClass {
+        margin-top: 0;
+        width: 89%;
+    }
+    
+    /* adjust spacing of passengers and travel class at large screen */
+    #details {
+        display: grid;
+        grid-template-columns: 23% 24.5% 54.5%;
+        grid-column-gap: 2%;
+    }
+    
+    /* ensure that passenger fields appear on 1 line at large screen */
+    .form-group.selectNum {
+        width: 100%;
+    }
+}

@@ -1,0 +1,54 @@
+<!-- 
+******** HTML CODE SNIPPETS ******** 
+-->
+<!-- custom checkbox-->
+<div class="check">
+    <span role="checkbox" id="chkPref" aria-checked="false" onclick="changeCheckbox()" onKeyPress="changeCheckbox()"
+tabindex="0" aria-labelledby="chkLabel"></span> 
+<label id="chkLabel" onclick="changeCheckbox()" onKeyPress="changeCheckbox()">Remember me</label>
+</div>
+
+<!-- custom slider -->
+<label>
+    <input type="checkbox">
+    <span class="checkbox-value" aria-hidden="true"></span>
+     Set phasers to stun
+</label>
+
+/* 
+******** CSS CODE SNIPPETS ******** 
+*/
+
+/* ARIA Custom checkbox */
+[role="checkbox"] {
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.3em;
+    font-style: normal;
+    color: #ecbb07;
+    padding-right: .25em;
+}
+
+[aria-checked="true"]::before {
+    content: "\f0c8";
+}
+
+[aria-checked="false"]::before {
+    content: "\f14a";
+}
+
+
+/* 
+******** JS CODE SNIPPETS ******** 
+*/
+// custom checkbox
+    function changeCheckbox(event) {
+    let item = document.getElementById('chkPref');
+    switch(item.getAttribute('aria-checked')) {
+        case "true":
+            item.setAttribute('aria-checked', "false");
+            break;
+        case "false":
+            item.setAttribute('aria-checked', "true");
+            break;
+    }
+}
