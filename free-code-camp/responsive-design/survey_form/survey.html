@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="August Frisk">
+        <meta name="description"
+            content="Bulletin Board Survey Form - FreeCodeCamp Responsive Design Certificate Project.">
+        <link href="https://fonts.googleapis.com/css?family=Handlee:400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Bulletin Board Survey</title>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <!-- Header Section -->
+            <div class="header">
+                <h1 id="title">Tools and Skills</h1>
+                <p id="description">The aim of this form is to collect data from the FreeCodeCamp users and understand
+                    their skills and tools they prefer to use.</p>
+            </div>
+
+            <!-- Sticky Notes -->
+            <div class="sticky-notes">
+                <form action="get" id="survey-form">
+
+                    <!-- Personal Info -->
+                    <fieldset class="sticky-note">
+                        <legend class="tape">Personal info</legend>
+                        <label for="name" id="name_label">
+                            <input type="text" name="name" id="name" placeholder="Your Name"></label>
+                        <label for="email" id="email-label">
+                            <input type="email" name="email" id="email" placeholder="example@email.com"></label>
+                        <label for="number" id="number-label">
+                            <input type="number" name="number" id="number" min="1" max="60" placeholder="Age"></label>
+                        <fieldset>
+                            <legend>Sex:</legend>
+                            <label for="male">
+                                <input type="radio" name="gender" id="male">Male
+                            </label>
+                            <label for="female">
+                                <input type="radio" name="gender" id="female">Female
+                            </label>
+                            <label for="other">
+                                <input type="radio" name="gender" id="other">Other
+                            </label>
+                        </fieldset>
+                    </fieldset>
+
+                    <!-- Question 1 -->
+                    <fieldset class="sticky-note">
+                        <legend class="tape">Question 1</legend>
+                        <h3>Where are you from?</h3>
+                        <select name="location" id="dropdown">
+                            <optgroup label="Africa">
+                                <option value="">Algeria</option>
+                                <option value="">Botswana</option>
+                                <option value="">Madagascar</option>
+                                <option value="">Uganda</option>
+                            </optgroup>
+                            <optgroup label="Asia">
+                                <option value="">Afghanistan</option>
+                                <option value="">India</option>
+                                <option value="">Pakistan</option>
+                                <option value="">Russia</option>
+                            </optgroup>
+                            <optgroup label="Europe">
+                                <option value="">Albania</option>
+                                <option value="">Croatia</option>
+                                <option value="">Georgia</option>
+                                <option value="">Romania</option>
+                            </optgroup>
+                            <optgroup label="North America">
+                                <option value="">Canada</option>
+                                <option value="">Greenland</option>
+                                <option value="">Mexico</option>
+                                <option value="">United States</option>
+                            </optgroup>
+                            <optgroup label="South America">
+                                <option value="">Argentina</option>
+                                <option value="">Brazil</option>
+                                <option value="">Chile</option>
+                                <option value="">Venezuela</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+
+                    <!-- Question 2 -->
+                    <fieldset class="sticky-note">
+                        <legend class="tape">Question 2</legend>
+                        <h3>Where did you hear about FreeCodeCamp?</h3>
+                        <label for="internet">
+                            <input type="checkbox" name="internet" id="internet" value="internet">Internet
+                        </label>
+                        <br />
+                        <label for="friend">
+                            <input type="checkbox" name="friend" id="friend">Friend
+                        </label>
+                        <br />
+                        <label for="other-source">
+                            <input type="checkbox" name="other-source" id="other-source">Other source
+                        </label>
+                    </fieldset>
+
+                    <!-- Question 3 -->
+                    <fieldset class="sticky-note">
+                        <legend class="tape">Question 3</legend>
+                        <h3>What is your preffered Operating System?</h3>
+                        <label for="windows">
+                            <input type="radio" name="os" id="windows">Microsoft Windows</label>
+                        <br />
+                        <label for="linux">
+                            <input type="radio" name="os" id="linux">Linux</label>
+                        <br />
+                        <label for="macOS">
+                            <input type="radio" name="os" id="macOS">macOS</label>
+                    </fieldset>
+
+                    <!-- Question 4 -->
+                    <fieldset class="sticky-note">
+                        <legend class="tape">Question 4</legend>
+                        <h3>What IDE do you use?</h3>
+                        <select name="ide" id="ide">
+                            <option value="">VSCode</option>
+                            <option value="">Atom</option>
+                            <option value="">NetBeans</option>
+                            <option value="">Vim</option>
+                            <option value="">SublimeText</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset class="sticky-note">
+
+                        <!-- Question 5 -->
+                        <legend class="tape">Question 5</legend>
+                        <h3>What skills did you learn on FreeCodeCamp?</h3>
+                        <label for="html">
+                            <input type="checkbox" name="html" id="html">HTML
+                        </label>
+                        <br />
+                        <label for="css3">
+                            <input type="checkbox" name="css" id="css">CSS
+                        </label>
+                        <br />
+                        <label for="javaScript">
+                            <input type="checkbox" name="javaScript" id="javaScript">javaScript
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Question 6 -->
+                    <fieldset class="sticky-note">
+                        <legend class="tape">Question 6</legend>
+                        <h3>Let me know how could I improve this form</h3>
+                        <label for="comment">
+                            <textarea name="comment" id="comment" cols="20" rows="4">Message</textarea>
+                        </label>
+                    </fieldset>
+
+                    <!-- Submit Button -->
+                    <button class="button" type="submit"><span>Submit</span></button>
+                </form>
+            </div>
+
+            <!-- Footer Section -->
+            <div class="footer">
+                <p>Copyright &copy; 2018 - 2019 August Frisk. All rights reserved. <span class="fcc">Powered by <i
+                            class="fas fa-laptop-code"></i> freeCodeCamp</span></p>
+            </div>
+
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,243 @@
+/* 
+** Author: August Frisk
+** Course: freeCodeCamp Responsive Design - Summer 2018
+** Project: Product Landing Page
+*/
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  color: white;
+  font: 1rem "Raleway";
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body a {
+  text-decoration: none;
+}
+body .title {
+  font-size: 2em;
+  margin-bottom: 2em;
+  font-weight: 400;
+}
+body input {
+  font: 1rem "Raleway";
+}
+
+#header {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+}
+
+.logo {
+  overflow: hidden;
+}
+.logo #header-img {
+  max-width: 100%;
+  max-height: 4rem;
+  padding: 0.5em 2em;
+  transform: scale(1.8);
+}
+
+#nav-bar {
+  min-height: 20px;
+  background: rgba(11, 150, 11, 0.8);
+}
+#nav-bar > ul {
+  margin: 0;
+  padding: 0.4em;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#nav-bar > ul li {
+  list-style: none;
+  margin: 0;
+}
+#nav-bar > ul li > a {
+  color: white;
+  padding: 0.4em 0;
+}
+
+#video {
+  height: 100vh;
+  width: 100%;
+}
+
+.newsletter {
+  background: url(../images/dark-triangles.png) center/contain;
+  padding: 2em 0.2em;
+}
+.newsletter .title {
+  margin: 0 auto 0.5em;
+}
+.newsletter #form input {
+  color: white;
+  background: none;
+  padding: 0.5em 1em;
+  border: 2px solid white;
+}
+.newsletter #form #submit {
+  color: white;
+  background: #0b960b;
+  cursor: pointer;
+}
+.newsletter #form #submit:hover, .newsletter #form #submit:active, .newsletter #form #submit:focus {
+  background: rgba(11, 150, 11, 0.9);
+}
+
+#features {
+  padding: 6em 1em 4em;
+  background: linear-gradient(black, transparent), url(../images/processor.jpg) center/cover no-repeat fixed;
+}
+#features .features-parent {
+  display: flex;
+  justify-content: space-evenly;
+}
+#features .features-parent .features-child {
+  width: 10%;
+}
+#features .features-parent .features-child img {
+  display: block;
+  max-width: 100%;
+}
+#features .features-parent .features-child .feature-title {
+  font-weight: 600;
+}
+
+#gallery,
+#buy-now {
+  padding: 6em 1em 4em;
+}
+
+.gallery-parent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 1em auto 0;
+}
+.gallery-parent .gallery-child {
+  flex-basis: 33.3333333%;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery-parent .gallery-child img {
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  display: block;
+}
+.gallery-parent .gallery-child:hover img {
+  transform: scale(1.2);
+}
+
+#buy-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: linear-gradient(black, transparent), url(../images/controller.jpg) center/cover no-repeat fixed;
+  background-position: top;
+}
+#buy-now .title {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+#buy-now .purchase-parent {
+  padding: 2em 0;
+  width: 60%;
+}
+#buy-now .purchase-parent .btn-buy {
+  font: inherit;
+  margin-top: 0.4em;
+  padding: 0.5em 1em;
+  background: none;
+  border: 2px solid #0b960b;
+  outline: none;
+}
+#buy-now .purchase-parent .btn-buy > a {
+  color: white;
+}
+#buy-now .purchase-parent .btn-buy:hover {
+  background: #0b960b;
+  color: white;
+  background-position: -10em;
+  background-size: 100%;
+}
+
+#footer {
+  position: relative;
+  font-weight: 300;
+}
+#footer a {
+  color: #0b960b;
+}
+#footer .footer-info {
+  font-weight: 300;
+}
+#footer .note {
+  font-size: 0.6em;
+  opacity: 0.4;
+  font-weight: 200;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  bottom: -1.8em;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  #features .features-parent {
+    justify-content: space-around;
+  }
+  #features .features-parent .features-child {
+    margin: auto;
+    width: 15%;
+  }
+  #features .features-parent .features-child .feature-title {
+    font-size: 1em;
+  }
+  #buy-now {
+    padding-top: 4em;
+    height: 85vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  #email {
+    margin-bottom: 0.4em;
+  }
+  #features .features-parent {
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+  }
+  #features .features-parent .features-child {
+    width: 30%;
+    margin-bottom: 2em;
+  }
+  #features .features-parent .features-child .feature-title {
+    margin: 0.4em 0;
+  }
+  .gallery-parent {
+    display: block;
+  }
+  .gallery-parent img {
+    width: 100%;
+  }
+  #footer {
+    font-size: 0.8em;
+  }
+  #footer .note {
+    font-size: 0.4em;
+  }
+}
